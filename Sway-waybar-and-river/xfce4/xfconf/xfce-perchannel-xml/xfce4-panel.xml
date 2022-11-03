@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="size" type="uint" value="25"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="2"/>
+        <value type="int" value="4"/>
+        <value type="int" value="3"/>
+        <value type="int" value="10"/>
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="9"/>
+        <value type="int" value="12"/>
+      </property>
+      <property name="autohide-behavior" type="uint" value="1"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="wi-fi network connection “rpmd” active: rpmd (73%)"/>
+        <value type="string" value="wi-fi network connection “rpmd” active: rpmd (71%)"/>
+        <value type="string" value="wi-fi network connection “rpmd” active: rpmd (76%)"/>
+        <value type="string" value="wi-fi network connection “rpmd” active: rpmd (62%)"/>
+        <value type="string" value="wi-fi network connection “rpmd” active: rpmd (63%)"/>
+        <value type="string" value="wi-fi network connection “rpmd” active: rpmd (66%)"/>
+        <value type="string" value="wi-fi network connection “rpmd” active: rpmd (74%)"/>
+        <value type="string" value="wi-fi network connection “rpmd” active: rpmd (72%)"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="configuring wi-fi network connection “rpmd”…"/>
+        <value type="string" value="ibus panel"/>
+        <value type="string" value="no network connection"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="flameshot"/>
+        <value type="string" value="unityhub1"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="heroic1"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="ZapZap"/>
+        <value type="string" value="discord1"/>
+      </property>
+      <property name="icon-size" type="int" value="16"/>
+      <property name="single-row" type="bool" value="true"/>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="firefox.instance1155;firefox.instance1376;firefox.instance1398;firefox.instance1922;firefox.instance19409;firefox.instance2114;firefox.instance24547;firefox.instance2564;firefox.instance2661;firefox.instance3253;firefox.instance34592;firefox.instance36999;firefox.instance41937;firefox.instance4621;firefox.instance50121;firefox.instance5049;firefox.instance50738;firefox.instance51641;firefox.instance56593;firefox.instance5888;firefox.instance61950;firefox.instance7146;firefox.instance7707;firefox.instance8519;firefox.instance8938;firefox.instance923;firefox.instance9314;firefox.instance9325;firefox.instance9809;spotify"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="tooltip-format" type="string" value="%x"/>
+      <property name="digital-format" type="string" value="%_H:%M"/>
+    </property>
+    <property name="plugin-2" type="string" value="whiskermenu"/>
+  </property>
+</channel>
