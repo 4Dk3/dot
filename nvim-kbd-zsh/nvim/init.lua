@@ -3,12 +3,8 @@ require("Keys")
 require("Packers")
 -- Colorscheme
 vim.g.colors_name = nord
---vim.cmd("colorscheme kanagawa")
+--vim.cmd("base16-tomorrow-night")
 colorscheme = kanagawa
---vim.g.gruvbox_contrast_dark = "hard"
---vim.cmd "colorscheme NeoSolarized"
---vim.cmd "set termguicolors"
--- Idk but things related to tab and his width
 
 local o = vim.o
 local bo = vim.bo

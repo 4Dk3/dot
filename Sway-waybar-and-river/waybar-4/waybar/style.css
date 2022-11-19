@@ -1,6 +1,6 @@
 * {
-    font-family: MesloLGL Nerd Font;
-    font-size: 13px;
+    font-family: FuraMono Nerd Font;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -19,7 +19,7 @@ window#waybar.hidden {
     color: #ffffff;
     padding: 0 1px 0 1px;
     margin: 0 0 0 0;
-    text-shadow: -1px 1px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 #workspaces button:hover {
@@ -27,7 +27,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    color: #0d0d0d;
+    color: #7ac59c;
 }
 
 #workspaces button.urgent {
@@ -44,11 +44,10 @@ window#waybar.hidden {
 #window,
 #workspaces,
 #custom-activities,
-#custom-wlogout,
 #idle_inhibitor{
     padding: 2 6px 2 6px;
     color: #ffffff;
-    text-shadow: -1px 2px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 #clock{
@@ -57,14 +56,10 @@ window#waybar.hidden {
 }
 
 #custom-activities{
-    background-color: #0d0d0d;
+    background-color: #7ac59c;
     border-radius: 100;
     margin: 2px 0 2px 2px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0);
     box-shadow: inset -1px -2px #000000;
 }
 
-#custom-wlogout{
-    color: #0d0d0d;
-    border-radius: 100;
-}

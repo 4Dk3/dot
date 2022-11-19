@@ -6,20 +6,20 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
+set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim
-set $web firefox
+set $web brave-browser
 set $fm nautilus
 set $spotify flatpak run com.spotify.Client
-set $code codium
+set $code code
 set $disc flatpak run com.discordapp.Discord
 set $py pycharm
 
 
-output * bg ~/Wallpapers/asuka-blue.png stretch
+output * bg $HOME/Wallpapers/tatsu-rocks.png fill
 
-font CaskaydiaCove Nerd Font :12
+font FuraMono Nerd Font :12
 
 ### Input configuration
 
@@ -36,7 +36,6 @@ font CaskaydiaCove Nerd Font :12
 
        input "type:keyboard" {
             xkb_layout latam
-            xkb_options caps:super
 	}
 
 ### Key bindings
@@ -104,6 +103,8 @@ font CaskaydiaCove Nerd Font :12
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
 
+    # Toggle waybar
+    bindsym $mod+b exec killall -SIGUSR1 waybar
 #
 # System
 #
@@ -151,7 +152,7 @@ font CaskaydiaCove Nerd Font :12
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
+    bindsym $mod+o splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
@@ -215,7 +216,7 @@ bar {
 default_border pixel 0
 gaps inner 2
 gaps outer 2
-smart_gaps off
+smart_gaps on
 smart_borders on
 
 # startup command

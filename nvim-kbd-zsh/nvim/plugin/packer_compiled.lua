@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/AutoComplPop",
     url = "https://github.com/vim-scripts/AutoComplPop"
   },
+  ["base16-vim"] = {
+    loaded = true,
+    path = "/home/dk43/.local/share/nvim/site/pack/packer/start/base16-vim",
+    url = "https://github.com/chriskempson/base16-vim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/dk43/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
