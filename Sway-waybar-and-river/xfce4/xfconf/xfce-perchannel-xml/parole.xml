@@ -5,14 +5,14 @@
     <property name="font" type="string" value="Sans Bold 20"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/dk43/Fisica Animacion/Video/Rueda"/>
+    <property name="last-used-media" type="string" value="/home/dk43/.steam/steam/steamapps/common/Move or Die/Devkit/Tutorial Animation"/>
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="true"/>
     <property name="width" type="int" value="1366"/>
-    <property name="height" type="int" value="768"/>
+    <property name="height" type="int" value="742"/>
   </property>
   <property name="audio" type="empty">
-    <property name="volume" type="int" value="50"/>
+    <property name="volume" type="int" value="100"/>
   </property>
 </channel>
