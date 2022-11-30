@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Graphite-purple-Light-compact"/>
-    <property name="IconThemeName" type="string" value="Colloid-purple-light"/>
+    <property name="ThemeName" type="string" value="Jasper-Purple-Dark-Compact"/>
+    <property name="IconThemeName" type="string" value="Colloid-purple-dark"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>

@@ -63,6 +63,7 @@ alias vim=nvim
 alias vi=nvim
 alias python=python3
 alias pw=powerprofilesctl
+alias dosu=doas -u $USER
 
  export PATH="$HOME/.local/bin:$PATH"
 

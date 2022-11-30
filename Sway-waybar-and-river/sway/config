@@ -9,7 +9,7 @@ set $right l
 set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim
-set $web brave-browser
+set $web firefox
 set $fm nautilus
 set $spotify flatpak run com.spotify.Client
 set $code code
@@ -17,7 +17,7 @@ set $disc flatpak run com.discordapp.Discord
 set $py pycharm
 
 
-output * bg $HOME/Wallpapers/tatsu-rocks.png fill
+output * bg /home/dk43/Wallpapers/garou-purple.jpg fill
 
 font FuraMono Nerd Font :12
 
