@@ -7,10 +7,10 @@
     <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=6;x=683;y=18"/>
-      <property name="size" type="uint" value="25"/>
+      <property name="size" type="uint" value="35"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="length" type="uint" value="100"/>
-      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="autohide-behavior" type="uint" value="2"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="12"/>
         <value type="int" value="2"/>
@@ -18,23 +18,28 @@
         <value type="int" value="3"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
-        <value type="int" value="6"/>
         <value type="int" value="7"/>
         <value type="int" value="1"/>
       </property>
       <property name="icon-size" type="uint" value="16"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-rgba" type="array">
-        <value type="double" value="0.141176"/>
-        <value type="double" value="0.141176"/>
-        <value type="double" value="0.141176"/>
-        <value type="double" value="1.000000"/>
+        <value type="double" value="0.750000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.000000"/>
       </property>
     </property>
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-3" type="string" value="systray">
       <property name="known-legacy-items" type="array">
+        <value type="string" value="thunar"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (76%)"/>
+        <value type="string" value="selinux troubleshooter"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (70%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (66%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (71%)"/>
         <value type="string" value="wi-fi network connection “internet casa” active: internet casa (73%)"/>
         <value type="string" value="wi-fi network connection “internet casa” active: internet casa (65%)"/>
         <value type="string" value="wi-fi network connection “internet casa” active: internet casa (63%)"/>
@@ -60,10 +65,9 @@
     </property>
     <property name="plugin-4" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance14131;firefox.instance17501;firefox.instance1774;firefox.instance1787;firefox.instance1865;firefox.instance22743;firefox.instance2516;firefox.instance25336;firefox.instance3191;firefox.instance3321;firefox.instance37121;firefox.instance3892;firefox.instance40167;firefox.instance4288;firefox.instance4822;firefox.instance49164;firefox.instance50018;firefox.instance5051;firefox.instance8428;spotify"/>
+      <property name="mpris-players" type="string" value="firefox.instance10017;firefox.instance14131;firefox.instance16009;firefox.instance17501;firefox.instance1774;firefox.instance1787;firefox.instance18276;firefox.instance1865;firefox.instance1889;firefox.instance1937;firefox.instance2104;firefox.instance22743;firefox.instance2280;firefox.instance23113;firefox.instance2356;firefox.instance2489;firefox.instance2516;firefox.instance25336;firefox.instance26130;firefox.instance3191;firefox.instance33113;firefox.instance3321;firefox.instance37121;firefox.instance3892;firefox.instance40167;firefox.instance41105;firefox.instance4288;firefox.instance44689;firefox.instance4730;firefox.instance4822;firefox.instance49164;firefox.instance50018;firefox.instance5051;firefox.instance55140;firefox.instance7775;firefox.instance8428;spotify"/>
     </property>
     <property name="plugin-5" type="string" value="power-manager-plugin"/>
-    <property name="plugin-6" type="string" value="notification-plugin"/>
     <property name="plugin-7" type="string" value="clock">
       <property name="digital-format" type="string" value="%_H:%M"/>
     </property>
