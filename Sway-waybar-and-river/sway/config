@@ -9,15 +9,15 @@ set $right l
 set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim
-set $web firefox
-set $fm nautilus
+set $web brave-browser
+set $fm thunar
 set $spotify flatpak run com.spotify.Client
 set $code code
 set $disc flatpak run com.discordapp.Discord
 set $py pycharm
 
 
-output * bg /home/dk43/Wallpapers/garou-purple.jpg fill
+output * bg /home/dk43/Wallpapers/goju-purple.png fill
 
 font FuraMono Nerd Font :12
 
@@ -240,7 +240,7 @@ for_window [app_id="Popsicle"] floating enable
 #### Sway Window Colors ####
 set $unfocused  #000000
 set $urgent     #f8928a
-set $normal     #fd6666
+set $normal     #763db0
 set $inactive   #000000
 
 # colors                    border        bg          text         indicator   chld_brdr
