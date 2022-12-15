@@ -36,11 +36,19 @@ exec_always --no-startup-id dunst
 # border width
 default_border pixel 0
 
-# border colors
-client.focused #5e81ac #5e81ac #F8F8F2 #343746 #343746
-client.focused_inactive #2e3440 #2e3440 #F8F8F2 #21222C #21222C
-client.unfocused #2e3440 #2e3440 #F8F8F2 #21222C #21222C
+#### Sway Window Colors ####
+set $unfocused  #000000
+set $urgent     #f8928a
+set $normal     #763db0
+set $inactive   #000000
 
+# colors                    border        bg          text         indicator   chld_brdr
+client.focused              $normal     $normal     #ffffff        $normal     $normal
+client.focused_inactive     $inactive   $inactive   $unfocused     $inactive   $inactive
+client.unfocused            $unfocused  $unfocused  $unfocused     $unfocused  $unfocused
+client.urgent               $urgent     $urgent     $unfocused     $urgent     $urgent
+client.placeholder          $unfocused  $unfocused  $unfocused     $unfocused  $unfocused
+client.background           $unfocused
 
 # Keybinds
 
@@ -81,8 +89,6 @@ bindsym $mod+F4 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 # Brightness control
 bindsym $mod+F11 exec light -U 5
 bindsym $mod+F12 exec light -A 5
-
-
 
 
 # change focus

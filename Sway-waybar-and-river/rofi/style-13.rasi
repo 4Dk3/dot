@@ -12,8 +12,10 @@ configuration {
 	modi:                       "drun";
     show-icons:                 true;
     display-drun:               " Apps";
+
 	drun-display-format:        "{name}";
 }
+
 
 /*****----- Global Properties -----*****/
 /*@import                          "shared/colors.rasi"*/
@@ -86,7 +88,12 @@ entry {
     width:                       350px;
     padding:                     5px 20px;
     border-radius:               15px;
-    background-color:            #1c1c1c;
+    backg# border colors
+client.focused #5e81ac #5e81ac #F8F8F2 #343746 #343746
+client.focused_inactive #2e3440 #2e3440 #F8F8F2 #21222C #21222C
+client.unfocused #2e3440 #2e3440 #F8F8F2 #21222C #21222C
+
+round-color:            #1c1c1c;
     text-color:                  #ffffff;
     cursor:                      text;
     placeholder:                 "Search...";
@@ -118,7 +125,7 @@ listview {
 }
 scrollbar {
     handle-width:                5px ;
-    handle-color:                @selected;
+    handle-color:                #763db0;
     border-radius:               0px;
     background-color:            #242424;
 }
@@ -177,3 +184,5 @@ textbox {
     horizontal-align:            0.0;
     highlight:                   none;
 }
+
+font: "FuraMono Nerd Font 12";
