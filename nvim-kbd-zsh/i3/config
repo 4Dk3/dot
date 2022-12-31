@@ -4,7 +4,7 @@ font FuraMono Nerd Font 10
 
 # Variables
 #set $menu rofi -show drun -show-icons
-set $menu rofi -show drun -show-icons
+set $menu rofi -show drun -show-icons -theme ~/.config/rofi/style-13.rasi
 set $srcs flameshot gui
 set $web firefox
 set $fm nautilus
@@ -25,8 +25,8 @@ gaps outer 2
 # Autostart
 exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id nm-applet 
-exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/scream.jpg
-exec_always --no-startup-id picom -b -f --experimental-backends
+exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/power-and-denji.jpg
+exec_always --no-startup-id picom -b -f
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
 exec_always --no-startup-id xrandr --output eDP1 --set "scaling mode" "Full aspect"
 exec_always --no-startup-id dunst

@@ -12,7 +12,7 @@
     <property name="click_to_focus" type="bool" value="true"/>
     <property name="cycle_apps_only" type="bool" value="false"/>
     <property name="cycle_draw_frame" type="bool" value="true"/>
-    <property name="cycle_raise" type="bool" value="true"/>
+    <property name="cycle_raise" type="bool" value="false"/>
     <property name="cycle_hidden" type="bool" value="true"/>
     <property name="cycle_minimum" type="bool" value="true"/>
     <property name="cycle_minimized" type="bool" value="false"/>
@@ -61,8 +61,8 @@
     <property name="vblank_mode" type="string" value="auto"/>
     <property name="theme" type="string" value="Jasper-Purple-Dark-Compact"/>
     <property name="tile_on_move" type="bool" value="true"/>
-    <property name="title_alignment" type="string" value="center"/>
-    <property name="title_font" type="string" value="Inter Medium 9"/>
+    <property name="title_alignment" type="string" value="left"/>
+    <property name="title_font" type="string" value="Inter Bold 9"/>
     <property name="title_horizontal_offset" type="int" value="0"/>
     <property name="titleless_maximize" type="bool" value="true"/>
     <property name="title_shadow_active" type="string" value="false"/>
@@ -77,17 +77,17 @@
     <property name="wrap_cycle" type="bool" value="true"/>
     <property name="wrap_layout" type="bool" value="true"/>
     <property name="wrap_resistance" type="int" value="10"/>
-    <property name="wrap_windows" type="bool" value="true"/>
+    <property name="wrap_windows" type="bool" value="false"/>
     <property name="wrap_workspaces" type="bool" value="false"/>
     <property name="zoom_desktop" type="bool" value="true"/>
     <property name="zoom_pointer" type="bool" value="true"/>
     <property name="workspace_names" type="array">
-      <value type="string" value="I"/>
-      <value type="string" value="II"/>
-      <value type="string" value="III"/>
-      <value type="string" value="IV"/>
-      <value type="string" value="V"/>
-      <value type="string" value="VI"/>
+      <value type="string" value="1"/>
+      <value type="string" value="2"/>
+      <value type="string" value="3"/>
+      <value type="string" value="4"/>
+      <value type="string" value="5"/>
+      <value type="string" value="6"/>
     </property>
   </property>
 </channel>

@@ -1,11 +1,19 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[/home/dk43/Desktop/net.lutris.lol-mod-2.desktop]
+[4934-851A]
+row=0
+col=0
+
+[Trash]
 row=1
 col=0
 
-[/home/dk43/Desktop/net.lutris.league-of-legends-1.desktop]
+[/]
+row=2
+col=0
+
+[/home/power43]
 row=3
 col=0
 

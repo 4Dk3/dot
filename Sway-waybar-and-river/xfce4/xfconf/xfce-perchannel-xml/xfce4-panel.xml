@@ -3,85 +3,79 @@
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
-    <value type="int" value="1"/>
+    <value type="int" value="2"/>
     <property name="dark-mode" type="bool" value="true"/>
-    <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=683;y=18"/>
-      <property name="size" type="uint" value="35"/>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="length" type="uint" value="100"/>
-      <property name="autohide-behavior" type="uint" value="2"/>
+    <property name="panel-2" type="empty">
+      <property name="position" type="string" value="p=6;x=683;y=15"/>
+      <property name="size" type="uint" value="32"/>
+      <property name="length" type="double" value="100"/>
+      <property name="length-adjust" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="12"/>
+        <value type="int" value="15"/>
+        <value type="int" value="16"/>
+        <value type="int" value="22"/>
         <value type="int" value="2"/>
-        <value type="int" value="8"/>
-        <value type="int" value="3"/>
-        <value type="int" value="4"/>
-        <value type="int" value="5"/>
-        <value type="int" value="7"/>
         <value type="int" value="1"/>
+        <value type="int" value="18"/>
+        <value type="int" value="21"/>
       </property>
+      <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="16"/>
-      <property name="background-style" type="uint" value="1"/>
-      <property name="background-rgba" type="array">
-        <value type="double" value="0.750000"/>
-        <value type="double" value="0.250000"/>
-        <value type="double" value="0.250000"/>
-        <value type="double" value="0.000000"/>
-      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-3" type="string" value="systray">
-      <property name="known-legacy-items" type="array">
-        <value type="string" value="thunar"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (76%)"/>
-        <value type="string" value="selinux troubleshooter"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (70%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (66%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (71%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (73%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (65%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (63%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (80%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (79%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (78%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (74%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (100%)"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (62%)"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="seapplet"/>
-        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (75%)"/>
-      </property>
-      <property name="known-items" type="array">
-        <value type="string" value="ZapZap"/>
-        <value type="string" value="steam"/>
-        <value type="string" value="discord1"/>
-        <value type="string" value="flameshot"/>
-        <value type="string" value="dnfdragora-updater"/>
-        <value type="string" value="blueman"/>
-      </property>
-      <property name="icon-size" type="int" value="16"/>
+    <property name="plugin-15" type="string" value="whiskermenu"/>
+    <property name="plugin-16" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
     </property>
-    <property name="plugin-4" type="string" value="pulseaudio">
+    <property name="plugin-18" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance10017;firefox.instance14131;firefox.instance16009;firefox.instance17501;firefox.instance1774;firefox.instance1787;firefox.instance18276;firefox.instance1865;firefox.instance1889;firefox.instance1937;firefox.instance2104;firefox.instance22743;firefox.instance2280;firefox.instance23113;firefox.instance2356;firefox.instance2489;firefox.instance2516;firefox.instance25336;firefox.instance26130;firefox.instance3191;firefox.instance33113;firefox.instance3321;firefox.instance37121;firefox.instance3892;firefox.instance40167;firefox.instance41105;firefox.instance4288;firefox.instance44689;firefox.instance4730;firefox.instance4822;firefox.instance49164;firefox.instance50018;firefox.instance5051;firefox.instance55140;firefox.instance7775;firefox.instance8428;spotify"/>
+      <property name="mpris-players" type="string" value="firefox.instance1384;firefox.instance2331;firefox.instance24866;firefox.instance3603;firefox.instance3661;spotify"/>
     </property>
-    <property name="plugin-5" type="string" value="power-manager-plugin"/>
-    <property name="plugin-7" type="string" value="clock">
-      <property name="digital-format" type="string" value="%_H:%M"/>
+    <property name="plugin-21" type="string" value="clock">
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-font" type="string" value="Sans 13"/>
     </property>
-    <property name="plugin-8" type="string" value="separator">
+    <property name="plugin-22" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-12" type="string" value="whiskermenu"/>
-    <property name="plugin-1" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-2" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
-      <property name="miniature-view" type="bool" value="false"/>
+    <property name="plugin-1" type="string" value="power-manager-plugin"/>
+    <property name="plugin-2" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (63%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (58%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (66%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (68%)"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (73%)"/>
+      </property>
+      <property name="icon-size" type="int" value="16"/>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="hide-new-items" type="bool" value="true"/>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="hidden-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (66%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (58%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (63%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (73%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (68%)"/>
+      </property>
+      <property name="hidden-items" type="array">
+        <value type="string" value="blueman"/>
+        <value type="string" value="discord1"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="ZapZap"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="ZapZap"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="discord1"/>
+      </property>
     </property>
   </property>
 </channel>
