@@ -19,8 +19,8 @@ for_window [class="^.*"] border pixel 0
 gaps inner 2
 gaps outer 2
 
-#smart_borders on
-#smart_gaps on
+smart_borders on
+smart_gaps on
 
 # Autostart
 exec_always --no-startup-id dex --autostart --environment i3
