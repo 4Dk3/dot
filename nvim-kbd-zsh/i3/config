@@ -12,15 +12,15 @@ set $spotify flatpak run com.spotify.Client
 set $code code
 set $disc flatpak run com.discordapp.Discord
 set $py pycharm
-set $term alacritty
+set $term kitty
 
 for_window [class="^.*"] border pixel 0
 
-gaps inner 2
-gaps outer 2
+#gaps inner 2
+#gaps outer 2
 
-smart_borders on
-smart_gaps on
+#smart_borders on
+#smart_gaps on
 
 # Autostart
 exec_always --no-startup-id dex --autostart --environment i3

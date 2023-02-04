@@ -13,7 +13,7 @@
          "format": "{icon}",
          "format-icons": {
              "urgent": "十",
-             "focused": "十",
+             "focused": "",
              "default": "十"
          }
     },

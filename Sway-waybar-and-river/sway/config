@@ -6,10 +6,10 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term alacritty
+set $term kitty
 set $menu wofi --show drun -I
 set $srcs grim
-set $web brave-browser
+set $web firefox
 set $fm thunar
 set $spotify flatpak run com.spotify.Client
 set $code code
@@ -17,7 +17,7 @@ set $disc flatpak run com.discordapp.Discord
 set $py pycharm
 
 
-output * bg /home/dk43/Wallpapers/goju-purple.png fill
+output * bg $HOME/Wallpapers/power-and-denji.jpg fill
 
 font FuraMono Nerd Font :12
 
