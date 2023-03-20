@@ -12,9 +12,9 @@
          "all-outputs": true,
          "format": "{icon}",
          "format-icons": {
-             "urgent": "十",
-             "focused": "",
-             "default": "十"
+             "urgent": " 十 ",
+             "focused": "  ",
+             "default": " 十 "
          }
     },
     

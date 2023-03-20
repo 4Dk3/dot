@@ -7,12 +7,12 @@ font FuraMono Nerd Font 10
 set $menu rofi -show drun -show-icons -theme ~/.config/rofi/style-13.rasi
 set $srcs flameshot gui
 set $web firefox
-set $fm nautilus
+set $fm thunar
 set $spotify flatpak run com.spotify.Client
 set $code code
 set $disc flatpak run com.discordapp.Discord
 set $py pycharm
-set $term kitty
+set $term alacritty
 
 for_window [class="^.*"] border pixel 0
 
@@ -25,7 +25,7 @@ for_window [class="^.*"] border pixel 0
 # Autostart
 exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id nm-applet 
-exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/power-and-denji.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/nissan-silvias14.jpg
 exec_always --no-startup-id picom -b -f
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
 exec_always --no-startup-id xrandr --output eDP1 --set "scaling mode" "Full aspect"

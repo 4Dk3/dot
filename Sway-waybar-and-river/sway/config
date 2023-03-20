@@ -6,7 +6,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term kitty
+set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim
 set $web firefox
@@ -17,7 +17,7 @@ set $disc flatpak run com.discordapp.Discord
 set $py pycharm
 
 
-output * bg $HOME/Wallpapers/power-and-denji.jpg fill
+output * bg $HOME/Wallpapers/toyotaae86wheel-tofudelivery.jpg fill
 
 font FuraMono Nerd Font :12
 
