@@ -5,10 +5,10 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: FuraMono Nerd Font
+    family: MesloLGS Nerd Font
     style: Regular
   
-  size: 11.0
+  size: 12.0
 
 # Base16 Tomorrow Night 256 - alacritty color config
 # Chris Kempson (http://chriskempson.com)

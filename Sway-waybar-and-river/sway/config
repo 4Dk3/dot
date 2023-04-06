@@ -9,15 +9,18 @@ set $right l
 set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim
-set $web firefox
+set $web brave-browser
 set $fm thunar
 set $spotify flatpak run com.spotify.Client
 set $code code
-set $disc flatpak run com.discordapp.Discord
+set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
+output * {
+   bg $HOME/Wallpapers/power-smiey.jpg fill
+   mode 1600x900@60hz
+}
 
-output * bg $HOME/Wallpapers/toyotaae86wheel-tofudelivery.jpg fill
 
 font FuraMono Nerd Font :12
 
@@ -238,10 +241,10 @@ for_window [app_id="Popsicle"] floating enable
 #for_window [class="discord" instance="discord"] floating enable
 
 #### Sway Window Colors ####
-set $unfocused  #000000
+set $unfocused  #242424
 set $urgent     #f8928a
-set $normal     #763db0
-set $inactive   #000000
+set $normal     #b5583a
+set $inactive   #242424
 
 # colors                    border        bg          text         indicator   chld_brdr
 client.focused              $normal     $normal     $unfocused     $normal     $normal

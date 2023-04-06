@@ -1,11 +1,11 @@
 {
     "layer": "top", 
     "position": "top", 
-    "height": 20,
-    "spacing": 5,
-    "modules-left": ["custom/activities", "sway/workspaces", "sway/window"],
+    "height": 35,
+    "spacing": 0,
+    "modules-left": ["custom/activities", "wlr/taskbar", "sway/workspaces"],
     "modules-center": [],
-    "modules-right": ["tray", "pulseaudio", "network", "backlight", "battery", "clock", "custom/wlogout"],
+    "modules-right": ["tray", "pulseaudio", "backlight", "battery", "clock"],
 
      "sway/workspaces": {
          "disable-scroll": true,
@@ -13,8 +13,8 @@
          "format": "{icon}",
          "format-icons": {
              "urgent": " 十 ",
-             "focused": "  ",
-             "default": " 十 "
+             "focused": "  ",
+             "default": "  "
          }
     },
     
@@ -22,6 +22,15 @@
          "format": "{}",
          "max-length": 20,
    },
+
+   "wlr/taskbar": {
+    	"format": "{icon}",
+    	"icon-size": 12,
+    	"tooltip-format": "{title}",
+    	"on-click": "activate",
+    	"on-click-middle": "minimize",
+    	"on-click-right": "close",
+    },
     
     "idle_inhibitor": {
         "format": "{icon}",
@@ -32,7 +41,7 @@
     },
 
     "tray": {
-        "icon-size": 16,
+        "icon-size": 12,
         "spacing": 5
     },
 
@@ -84,7 +93,7 @@
     },
 
    "custom/activities": {
-	"format": "Activities",
+	"format": "",
 	"on-click": "wofi --show drun -I -W 1300 -H 700 -G",
    },
 }
