@@ -1,7 +1,7 @@
 * {
     font-family: MesloLGS Nerd Font;
     font-size: 12px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 window#waybar {
@@ -54,12 +54,15 @@ window#waybar.hidden {
     
 }
 
-#taskbar button.active {
-    border-bottom-color: #cecece;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+#taskbar button {
+    border-radius: 1px;
+    padding: 0 0 0 3px;
+    margin: 2px;
+    color: #ffffff;
 }
-
+#taskbar button.active {
+    background-color: #a16286;
+}
 
 #clock{
     margin-left: 0px;

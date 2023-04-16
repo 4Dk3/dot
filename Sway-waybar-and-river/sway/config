@@ -9,7 +9,7 @@ set $right l
 set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim
-set $web brave-browser
+set $web brave
 set $fm thunar
 set $spotify flatpak run com.spotify.Client
 set $code code
@@ -18,11 +18,26 @@ set $py pycharm
 
 output * {
    bg $HOME/Wallpapers/power-smiey.jpg fill
-   mode 1600x900@60hz
+}
+
+output HDMI-A-1 pos 0 0 res 1360x768
+output eDP-1 pos 1366 0 res 1366x768
+
+focus output eDP-1
+
+
+
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Jasper-Purple-Dark-Compact'
+    gsettings set $gnome-schema icon-theme 'Colloid-purple-dark'
+    gsettings set $gnome-schema font-name 'MesloLGS Nerd Font'
 }
 
 
-font FuraMono Nerd Font :12
+
+font MesloLGS Nerd Font bold 8
 
 ### Input configuration
 
@@ -39,7 +54,7 @@ font FuraMono Nerd Font :12
 
        input "type:keyboard" {
             xkb_layout latam
-	}
+}
 
 ### Key bindings
 #
@@ -122,9 +137,27 @@ font FuraMono Nerd Font :12
     bindsym $mod+f11 exec light -U 5
     bindsym $mod+f12 exec light -A 5
 
-#
-# Workspaces:
-#
+    #
+    # Workspaces:
+    #
+    # Define outputs
+    set $output-primary eDP-1
+    set $output-secondary HDMI-A-1
+
+    # workspace to displays
+    workspace 1 output $output-primary
+    workspace 2 output $output-primary
+    workspace 3 output $output-primary
+    workspace 4 output $output-primary
+    workspace 5 output $output-primary
+    workspace 6 output $output-primary
+
+    workspace 7 output $output-secondary
+    workspace 8 output $output-secondary
+    workspace 9 output $output-secondary
+    workspace 10 output $output-secondary
+
+
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
@@ -224,7 +257,7 @@ smart_borders on
 
 # startup command
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
-exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
+exec --no-startup-id dbus-launch mako
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # set floating (nontiling)for apps needing it
@@ -243,13 +276,14 @@ for_window [app_id="Popsicle"] floating enable
 #### Sway Window Colors ####
 set $unfocused  #242424
 set $urgent     #f8928a
-set $normal     #b5583a
+set $normal     #5b3646
 set $inactive   #242424
+set $text	#ffffff
 
 # colors                    border        bg          text         indicator   chld_brdr
-client.focused              $normal     $normal     $unfocused     $normal     $normal
-client.focused_inactive     $inactive   $inactive   $unfocused     $inactive   $inactive
-client.unfocused            $unfocused  $unfocused  $unfocused     $unfocused  $unfocused
-client.urgent               $urgent     $urgent     $unfocused     $urgent     $urgent
-client.placeholder          $unfocused  $unfocused  $unfocused     $unfocused  $unfocused
+client.focused              $normal     $normal     $text          $normal     $normal
+client.focused_inactive     $inactive   $inactive   $text          $inactive   $inactive
+client.unfocused            $unfocused  $unfocused  $text          $unfocused  $unfocused
+client.urgent               $urgent     $urgent     $text          $urgent     $urgent
+client.placeholder          $unfocused  $unfocused  $text          $unfocused  $unfocused
 client.background           $unfocused

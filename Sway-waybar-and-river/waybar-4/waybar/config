@@ -25,7 +25,7 @@
 
    "wlr/taskbar": {
     	"format": "{icon}",
-    	"icon-size": 12,
+    	"icon-size": 10,
     	"tooltip-format": "{title}",
     	"on-click": "activate",
     	"on-click-middle": "minimize",
