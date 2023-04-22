@@ -8,7 +8,7 @@ set $up k
 set $right l
 set $term alacritty
 set $menu wofi --show drun -I
-set $srcs grim
+set $srcs grim -g "$(slurp)" 
 set $web brave
 set $fm thunar
 set $spotify flatpak run com.spotify.Client
