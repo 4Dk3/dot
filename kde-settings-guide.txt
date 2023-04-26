@@ -1,0 +1,5 @@
+To create the kde plasma configuration, in the panel set the taskbar to 
+the mid and set it to no mark audio and to don't fill the space, and also
+use fancy task widget, hide all applets and on the clock disable the date.
+
+Set the bar to transparent and height 38, also install lightly (https://github.com/Luwx/Lightly) and change the theme to it. thats all

@@ -1,5 +1,5 @@
 window:
-  opacity: 1
+  opacity: 0.9
 scrolling:
  history: 50000
 # Font configuration
@@ -10,48 +10,54 @@ font:
   
   size: 12.0
 
-# Base16 Tomorrow Night 256 - alacritty color config
-# Chris Kempson (http://chriskempson.com)
 colors:
   # Default colors
   primary:
-    background: '0x242424'
-    foreground: '0xc5c8c6'
+    background: '0x2c2c2c'
+    foreground: '0xd6d6d6'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
+    dim_foreground:    '0xdbdbdb'
+    bright_foreground: '0xd9d9d9'
+    dim_background:    '0x202020' # not sure
+    bright_background: '0x3a3a3a' # not sure
+
+  # Cursor colors
   cursor:
-    text: '0x1d1f21'
-    cursor: '0xc5c8c6'
+    text:   '0x2c2c2c'
+    cursor: '0xd9d9d9'
 
   # Normal colors
   normal:
-    black:   '0x1d1f21'
-    red:     '0xcc6666'
-    green:   '0xb5bd68'
-    yellow:  '0xf0c674'
-    blue:    '0x81a2be'
-    magenta: '0xb294bb'
-    cyan:    '0x8abeb7'
-    white:   '0xc5c8c6'
+    black:   '0x1c1c1c'
+    red:     '0xbc5653'
+    green:   '0x909d63'
+    yellow:  '0xebc17a'
+    blue:    '0x7eaac7'
+    magenta: '0xaa6292'
+    cyan:    '0x86d3ce'
+    white:   '0xcacaca'
 
   # Bright colors
   bright:
-    black:   '0x969896'
-    red:     '0xcc6666'
-    green:   '0xb5bd68'
-    yellow:  '0xf0c674'
-    blue:    '0x81a2be'
-    magenta: '0xb294bb'
-    cyan:    '0x8abeb7'
-    white:   '0xffffff'
+    black:   '0x636363'
+    red:     '0xbc5653'
+    green:   '0x909d63'
+    yellow:  '0xebc17a'
+    blue:    '0x7eaac7'
+    magenta: '0xaa6292'
+    cyan:    '0x86d3ce'
+    white:   '0xf7f7f7'
 
-  indexed_colors:
-    - { index: 16, color: '0xde935f' }
-    - { index: 17, color: '0xa3685a' }
-    - { index: 18, color: '0x282a2e' }
-    - { index: 19, color: '0x373b41' }
-    - { index: 20, color: '0xb4b7b4' }
-    - { index: 21, color: '0xe0e0e0' }
+  # Dim colors
+  dim:
+    black:   '0x232323'
+    red:     '0x74423f'
+    green:   '0x5e6547'
+    yellow:  '0x8b7653'
+    blue:    '0x556b79'
+    magenta: '0x6e4962'
+    cyan:    '0x5c8482'
+    white:   '0x828282'
 
 cursor:
   style:
