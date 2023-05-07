@@ -19,16 +19,16 @@ window#waybar.hidden {
 #workspaces button {
     /*background-color: rgba(0.1, 0.1, 0.1, 0.0);*/
     background-color: #242424;
-    border-radius: 5px;
+    border-radius: 0px;
     color: #cecece;
-    padding: 1px 0px 1px 0px;
-    margin: 4px 2px 4px 2px;
+    padding: 0px 0px 0px 0px;
+    margin: 4px 0px 4px 0px;
 }
 
 
 #workspaces button.focused {
     color: #ffffff;
-    background-color: #5b3646;
+    background-color: #5f3343;
 }
 
 #workspaces button.urgent {
@@ -46,35 +46,35 @@ window#waybar.hidden {
 #custom-activities,
 #taskbar,
 #idle_inhibitor{
-    background-color: #5b3646;
+    background-color: #5f3343;
     border-radius: 1px;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
     margin: 4px 0px 4px 0px;
     color: #ffffff;
     
 }
 
-#taskbar button {
-    border-radius: 1px;
-    padding: 0 0 0 3px;
-    margin: 2px;
+#taskbar {
+    background-color: #242424;
     color: #ffffff;
+    border-radius: 0px;
+}
+
+#taskbar button {
+    padding: 2px;
+    color: #ffffff;
+    background-color: #242424;
 }
 #taskbar button.active {
-    background-color: #a16286;
+    background-color: #5f3343;
+    margin: 0px 2px 0px 2px;
+    border-radius: 0px;
+    padding: 0px 0px 0px 5px;
 }
-
-#clock{
-    margin-left: 0px;
-    margin-right: 10px;
-}
-
 
 
 #custom-activities{
     padding: 2px 10px 2px 10px;
     margin: 4px 0px 4px 0px;
-    margin-left: 10px;
-    margin-right: 0px;
 }
 

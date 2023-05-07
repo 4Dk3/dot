@@ -9,7 +9,7 @@ set $right l
 set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim -g "$(slurp)" 
-set $web brave
+set $web firefox
 set $fm thunar
 set $spotify flatpak run com.spotify.Client
 set $code code
@@ -31,7 +31,7 @@ set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Jasper-Purple-Dark-Compact'
-    gsettings set $gnome-schema icon-theme 'Colloid-purple-dark'
+    gsettings set $gnome-schema icon-theme 'Colloid-pink-nord-dark'
     gsettings set $gnome-schema font-name 'MesloLGS Nerd Font'
 }
 
@@ -276,7 +276,7 @@ for_window [app_id="Popsicle"] floating enable
 #### Sway Window Colors ####
 set $unfocused  #242424
 set $urgent     #f8928a
-set $normal     #5b3646
+set $normal     #5f3343
 set $inactive   #242424
 set $text	#ffffff
 

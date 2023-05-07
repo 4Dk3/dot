@@ -3,9 +3,9 @@
     "position": "top", 
     "height": 35,
     "spacing": 0,
-    "modules-left": ["custom/activities", "wlr/taskbar", "sway/workspaces"],
-    "modules-center": [],
-    "modules-right": ["tray", "pulseaudio", "backlight", "battery", "clock"],
+    "modules-left": ["clock"],
+    "modules-center": ["custom/activities", "sway/workspaces", "wlr/taskbar", "pulseaudio", "backlight", "battery"],
+    "modules-right": ["tray"],
 
      "sway/workspaces": {
          "disable-scroll": true,
