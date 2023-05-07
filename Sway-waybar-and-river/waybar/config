@@ -1,50 +1,37 @@
-{   
-    "height": 28,
-    "modules-left": ["custom/fedora", "sway/workspaces", "river/tags", "custom/pwr-mode", "idle_inhibitor"],
-    "modules-center": [""],
-    "modules-right": ["tray", "pulseaudio", "backlight", "battery", "network", "clock"],
+{
+    "layer": "top", 
+    "position": "top", 
+    "height": 35,
+    "spacing": 0,
+    "modules-left": ["clock"],
+    "modules-center": ["custom/activities", "sway/workspaces", "wlr/taskbar", "pulseaudio", "backlight", "battery"],
+    "modules-right": ["tray"],
 
-    // Modules configuration
      "sway/workspaces": {
-         "disable-scroll": false,
+         "disable-scroll": true,
          "all-outputs": true,
          "format": "{icon}",
          "format-icons": {
-             "1": "一",
-             "2": "二",
-             "3": "三",
-             "4": "四",
-             "5": "五",
-             "6": "六",
-             "7": "七",
-             "8": "八",
-             "9": "九",
-             "10": "十",
-             "urgent": " ",
-             "focused": " ",
-             "default": " "
+             "urgent": " 十 ",
+             "focused": "  ",
+             "default": "  "
          }
-     },
-
-     "river/tags": {
-	"num-tags": 10,
-	"format": "{name}",
-	"disable-click": false,
-	"tag-labels": ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
     },
     
-    "custom/fedora": {
-	"format": " || ",
-	"on-click": "wofi --show drun -I -W 600 -H 600",
-    },
+    "sway/window": {
+         "format": "{}",
+         "max-length": 20,
+   },
 
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
+   "wlr/taskbar": {
+    	"format": "{icon}",
+    	"icon-size": 10,
+    	"tooltip-format": "{title}",
+    	"on-click": "activate",
+    	"on-click-middle": "minimize",
+    	"on-click-right": "close",
     },
-
-    "sway/language": {
-        "format": "{short} ⠀"
-    },
+    
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -52,71 +39,61 @@
             "deactivated": ""
         }
     },
+
     "tray": {
-        "spacing": 10
-    },
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-	"format": " {:%H:%M}",
-	"format-alt": "{:%A, %B %d, %Y}  "
+        "icon-size": 12,
+        "spacing": 5
     },
 
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": [" ", " ", " "]
+    "clock": {
+        "format": " {:%H:%M}"
     },
+
     "backlight": {
-        "format": "{icon}{percent}%",
-        "format-icons": [" ", " "],
-        "on-scroll-up": "light -A 1",
-        "on-scroll-down": "light -U 1"
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
+
     "battery": {
         "states": {
             "warning": 30,
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "tooltip-format": "{timeTo}, {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " ",
-        "format-icons": ["", "", "", "", ""],
-    },
-
-    "custom/pwr-mode": {
-    	"format": " {}",
-	"interval": 20,
-	"exec": "cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "]
     },
 
     "network": {
-        "format-wifi": "直 {essid}",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr}  ",
-        "format-linked": "{ifname} (No IP)  ",
-        "format-disconnected": "睊",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "tooltip-format": "{essid} {signalStrength}%"
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ipaddr}/{cidr}",
+        "tooltip-format": " {ifname} via {gwaddr}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "⚠ No Net",
+        "format-alt": " {ifname}: {ipaddr}/{cidr}"
     },
+
     "pulseaudio": {
-        "format": "{icon}{volume}% {format_source}",
-        "format-bluetooth": "{icon} {volume}% {format_source}",
-        "format-bluetooth-muted": "   {volume}% {format_source}",
-        "format-muted": "  {format_source}",
-        "format-source": " ",
-        "format-source-muted": " ",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": " Muted",
         "format-icons": {
-            "headphone": " ",
-            "hands-free": " ",
-            "headset": " ",
-            "phone": " ",
-            "portable": " ",
-            "car": " ",
-            "default": [" ", " ", " "]
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
         },
-        "tooltip-format": "{desc}, {volume}%",
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-        "on-click-middle": "pavucontrol"
+
+        "on-click": "pavucontrol"
     },
+
+   "custom/activities": {
+	"format": "",
+	"on-click": "wofi --show drun -I -W 1300 -H 700 -G",
+   },
 }
