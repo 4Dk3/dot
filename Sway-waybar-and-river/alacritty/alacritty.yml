@@ -1,11 +1,12 @@
 window:
-  opacity: 0.9
+  opacity: 1.0
 scrolling:
  history: 50000
 # Font configuration
 font:
   normal:
-    family: MesloLGS Nerd Font
+    #family: MesloLGS Nerd Font
+    family: CaskaydiaCove Nerd Font
     style: Regular
   
   size: 12.0

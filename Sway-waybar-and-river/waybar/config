@@ -3,8 +3,8 @@
     "position": "top", 
     "height": 35,
     "spacing": 0,
-    "modules-left": ["clock"],
-    "modules-center": ["custom/activities", "sway/workspaces", "wlr/taskbar", "pulseaudio", "backlight", "battery"],
+    "modules-left": [],
+    "modules-center": ["custom/activities","custom/space", "sway/workspaces","custom/space", "wlr/taskbar", "custom/space" ,"pulseaudio", "backlight", "battery", "clock"],
     "modules-right": ["tray"],
 
      "sway/workspaces": {
@@ -46,7 +46,7 @@
     },
 
     "clock": {
-        "format": " {:%H:%M}"
+        "format": "󰥔 {:%H:%M}"
     },
 
     "backlight": {
@@ -93,7 +93,13 @@
     },
 
    "custom/activities": {
-	"format": "",
-	"on-click": "wofi --show drun -I -W 1300 -H 700 -G",
+	      "format": "",
+    	  "on-click": "wofi --show drun -I -W 1300 -H 700 -G",
+   },
+
+   "custom/space": {
+    
+    "format": "|"
+
    },
 }
