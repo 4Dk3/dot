@@ -3,9 +3,9 @@
     "position": "top", 
     "height": 35,
     "spacing": 0,
-    "modules-left": [],
-    "modules-center": ["custom/activities","custom/space", "sway/workspaces","custom/space", "wlr/taskbar", "custom/space" ,"pulseaudio", "backlight", "battery", "clock"],
-    "modules-right": ["tray"],
+    "modules-left": ["custom/endl", "sway/workspaces", "wlr/taskbar", "custom/endr"],
+    "modules-center": [],
+    "modules-right": ["tray", "custom/endl", "pulseaudio", "backlight", "battery", "clock", "custom/endr"],
 
      "sway/workspaces": {
          "disable-scroll": true,
@@ -25,7 +25,7 @@
 
    "wlr/taskbar": {
     	"format": "{icon}",
-    	"icon-size": 10,
+    	"icon-size": 16,
     	"tooltip-format": "{title}",
     	"on-click": "activate",
     	"on-click-middle": "minimize",
@@ -61,7 +61,7 @@
         },
         "format": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format-plugged": "  {capacity}%",
         "format-icons": [" ", " ", " ", " ", " "]
     },
 
@@ -92,14 +92,11 @@
         "on-click": "pavucontrol"
     },
 
-   "custom/activities": {
-	      "format": "",
-    	  "on-click": "wofi --show drun -I -W 1300 -H 700 -G",
+  "custom/endr": {
+        "format": " "
    },
 
-   "custom/space": {
-    
-    "format": "|"
-
+   "custom/endl": {
+        "format": " "
    },
 }

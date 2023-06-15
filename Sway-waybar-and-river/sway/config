@@ -17,7 +17,8 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   bg $HOME/Wallpapers/power-rose-2k.jpg fill
+   bg $HOME/Wallpapers/touka-last.jpg fill
+   #bg #5f3343 solid_color
 }
 
 output HDMI-A-1 pos 0 0 res 1360x768

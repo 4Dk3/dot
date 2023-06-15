@@ -1,11 +1,12 @@
 * {
     font-family: CaskaydiaCove Nerd Font;
+    /*font-family: manrope;*/
     font-size: 12px;
     font-weight: bold;
 }
 
 window#waybar {
-    /*background-color: rgba(0.1, 0.1, 0.1, 0.0);*/
+    /*background-color: rgba(0, 0, 0, 0.2);*/
     background-color: #242424;
     color: #ffffff;
     transition-property: background-color;
@@ -44,14 +45,24 @@ window#waybar.hidden {
 #custom-activities,
 #taskbar,
 #custom-space,
+#custom-endr,
+#custom-endl,
 #workspaces,
 #idle_inhibitor{
     background-color: #5f3343;
-    border-radius: 1px;
-    padding: 0px 10px 0px 10px;
+    border-radius: 0px;
+    padding: 0px 2px 0px 2px;
     margin: 4px 0px 4px 0px;
     color: #ffffff;
     
+}
+
+#tray {
+
+    padding: 0 10px 0 10px;
+    margin-right: 5px;
+    border-radius: 50px;
+
 }
 
 #custom-space {
@@ -77,9 +88,13 @@ window#waybar.hidden {
     border-radius: 0px;
 }
 
+#custom-endr{
+    padding-right: 10px;   
+    border-radius: 0 50px 50px 0;
+}
 
-#custom-activities{
-    color: #5f3343;
-    background-color: #ffffff;
+#custom-endl{
+    padding-left: 10px;
+    border-radius: 50px 0 0 50px;
 }
 
