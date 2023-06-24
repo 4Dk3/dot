@@ -24,14 +24,10 @@ window#waybar.hidden {
     padding: 0px
 }
 
-
-#workspaces button.focused {
+#workspaces button.active {
     color: #ffffff;
+    background-color: #222222;
     border-top: 2px solid #ffffff;
-}
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
 }
 
 #clock,

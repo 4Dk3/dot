@@ -145,6 +145,7 @@
     pamixer
     lxappearance
     flameshot
+    waybar
     htop
     picom-next
     kdenlive
