@@ -3,33 +3,24 @@
     "position": "top", 
     "height": 35,
     "spacing": 0,
-    "modules-left": ["custom/endl", "sway/workspaces", "wlr/workspaces", "wlr/taskbar", "custom/endr"],
-    "modules-center": [],
-    "modules-right": ["tray", "custom/endl", "pulseaudio", "backlight", "battery", "clock", "custom/endr"],
-
-     "sway/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "format": "{icon}",
-         "format-icons": {
-             "urgent": " 十 ",
-             "focused": "  ",
-             "default": "  "
-         }
-    },
+    "modules-left": [],
+    "modules-center": ["custom/endl", "custom/nix", "custom/sep" ,"wlr/workspaces", "custom/sep" , "wlr/taskbar", "custom/sep" , "pulseaudio", "backlight", "battery", "clock", "custom/endr"],
+    "modules-right": ["tray"],
 
     "wlr/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        "urgent": "",
-        "active": "",
-        "default": ""
+          "1": "一",
+          "2": "二",
+          "3": "三",
+          "4": "四",
+          "5": "五",
+          "6": "六",
+          "7": "七",
+          "8": "八",
+          "9": "九"
+
   },
   "sort-by-number": true
 },
@@ -114,5 +105,14 @@
 
    "custom/endl": {
         "format": " "
+   },
+
+   "custom/sep": {
+        "format": " "
+   },
+
+   "custom/nix": {
+        "format": "  ",
+        "on-click": "alacritty",
    },
 }

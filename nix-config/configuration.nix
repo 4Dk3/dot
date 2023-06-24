@@ -9,6 +9,18 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
+  
+  # Overlays
+
+  # Waybar experimental overlay
+    nixpkgs.overlays = [
+    (self: super: {
+      waybar = super.waybar.overrideAttrs (oldAttrs: {
+        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
+      });
+    })
+  ];
+
 
   # Cachix for gaming
   nix.settings = {
@@ -128,6 +140,7 @@
     vscode
     rofi
     python3Full
+    pulseaudio
     wineWowPackages.staging
     pamixer
     lxappearance
@@ -136,7 +149,6 @@
     picom-next
     kdenlive
     obs-studio
-    waybar
     mako
     wofi
     xdg-utils

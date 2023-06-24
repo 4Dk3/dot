@@ -1,7 +1,7 @@
 * {
     font-family: CaskaydiaCove Nerd Font;
     /*font-family: manrope;*/
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -18,7 +18,7 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    background-color: #5f3343;
+    background-color: #222222;
     border-radius: 0px;
     color: #cecece;
     padding: 0px
@@ -47,9 +47,12 @@ window#waybar.hidden {
 #custom-space,
 #custom-endr,
 #custom-endl,
+#custom-nix,
+#custom-sep,
 #workspaces,
+#taskbar,
 #idle_inhibitor{
-    background-color: #5f3343;
+    background-color: #222222;
     border-radius: 0px;
     padding: 0px 2px 0px 2px;
     margin: 4px 0px 4px 0px;
@@ -61,40 +64,40 @@ window#waybar.hidden {
 
     padding: 0 10px 0 10px;
     margin-right: 5px;
-    border-radius: 50px;
+    border-radius: 5px;
 
 }
 
-#custom-space {
-    background-color: #5f3343;
-    padding: 0px 10px 0px 10px;
-    color: #ffffff;
+#custom-nix {
+    font-size: 20px;
 }
 
 #taskbar {
-    background-color: #5f3343;
     color: #ffffff;
     border-radius: 0px;
 }
 
 #taskbar button {
     color: #ffffff;
-    background-color: #5f3343;
     padding: 0px 1px 0px 4px;
 }
 #taskbar button.active {
-    background-color: #5f3343;
     border-top: 2px solid #ffffff;
     border-radius: 0px;
 }
 
 #custom-endr{
     padding-right: 10px;   
-    border-radius: 0 50px 50px 0;
+    border-radius: 0 5px 5px 0;
 }
 
 #custom-endl{
     padding-left: 10px;
-    border-radius: 50px 0 0 50px;
+    border-radius: 5px 0 0 5px;
+}
+
+#custom-sep{
+    padding-left: 5px;
+    border-radius: 0px;
 }
 
