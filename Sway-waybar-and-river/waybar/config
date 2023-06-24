@@ -3,7 +3,7 @@
     "position": "top", 
     "height": 35,
     "spacing": 0,
-    "modules-left": ["custom/endl", "sway/workspaces", "wlr/taskbar", "custom/endr"],
+    "modules-left": ["custom/endl", "sway/workspaces", "wlr/workspaces", "wlr/taskbar", "custom/endr"],
     "modules-center": [],
     "modules-right": ["tray", "custom/endl", "pulseaudio", "backlight", "battery", "clock", "custom/endr"],
 
@@ -17,7 +17,23 @@
              "default": "  "
          }
     },
-    
+
+    "wlr/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "urgent": "",
+        "active": "",
+        "default": ""
+  },
+  "sort-by-number": true
+},
+
     "sway/window": {
          "format": "{}",
          "max-length": 20,

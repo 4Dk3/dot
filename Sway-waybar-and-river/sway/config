@@ -10,7 +10,7 @@ set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim -g "$(slurp)" 
 set $web firefox
-set $fm thunar
+set $fm nautilus
 set $spotify flatpak run com.spotify.Client
 set $code code
 set $disc flatpak run xyz.armcord.ArmCord
@@ -32,7 +32,7 @@ set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Jasper-Purple-Dark-Compact'
-    gsettings set $gnome-schema icon-theme 'Colloid-pink-nord-dark'
+    gsettings set $gnome-schema icon-theme 'Adwaita'
     gsettings set $gnome-schema font-name 'CaskaydiaCove Nerd Font'
 }
 
@@ -260,7 +260,7 @@ smart_borders on
 # startup command
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id dbus-launch mako
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec systemctl --user import-environment
 
 # set floating (nontiling)for apps needing it
 for_window [class="Yad" instance="yad"] floating enable
