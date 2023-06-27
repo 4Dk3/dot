@@ -130,6 +130,7 @@
   # Install system packages
   environment.systemPackages = with pkgs; [
     firefox
+    chromium
     neovim
     wget
     git
@@ -143,10 +144,12 @@
     pulseaudio
     wineWowPackages.staging
     pamixer
+    blueman
     lxappearance
     flameshot
     waybar
     htop
+    jdk
     picom-next
     kdenlive
     obs-studio
@@ -196,6 +199,9 @@ evdev:atkbd:dmi:*
   #################################
   ######## Services ###############
   #################################
+  
+  # Blueman
+  services.blueman.enable = true;
 
   # DBUS
   services.dbus.enable = true;
@@ -214,6 +220,12 @@ evdev:atkbd:dmi:*
       intel-media-driver # LIBVA_DRIVER_NAME=iHD
       ]; 
   };
+  
+  # Intel
+  hardware.cpu.intel.updateMicrocode = true;
+
+  # Java
+  programs.java.enable = true;
 
   # Font
   fonts.fonts = with pkgs; [

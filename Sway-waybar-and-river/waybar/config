@@ -4,7 +4,7 @@
     "height": 35,
     "spacing": 0,
     "modules-left": [],
-    "modules-center": ["custom/endl", "custom/nix", "custom/sep" ,"wlr/workspaces", "custom/sep" , "wlr/taskbar", "custom/sep" , "pulseaudio", "backlight", "battery", "clock", "custom/endr"],
+    "modules-center": ["custom/endl", "custom/nix" ,"wlr/workspaces", "wlr/taskbar", "pulseaudio", "backlight", "battery", "clock", "custom/endr"],
     "modules-right": ["tray"],
 
     "wlr/workspaces": {
@@ -19,7 +19,7 @@
           "6": "六",
           "7": "七",
           "8": "八",
-          "9": "九"
+          "9": "九",
 
   },
   "sort-by-number": true
@@ -104,10 +104,6 @@
    },
 
    "custom/endl": {
-        "format": " "
-   },
-
-   "custom/sep": {
         "format": " "
    },
 

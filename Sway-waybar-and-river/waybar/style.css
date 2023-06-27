@@ -44,13 +44,12 @@ window#waybar.hidden {
 #custom-endr,
 #custom-endl,
 #custom-nix,
-#custom-sep,
 #workspaces,
 #taskbar,
 #idle_inhibitor{
     background-color: #222222;
     border-radius: 0px;
-    padding: 0px 2px 0px 2px;
+    padding: 0px 10px 0px 10px;
     margin: 4px 0px 4px 0px;
     color: #ffffff;
     
@@ -90,10 +89,5 @@ window#waybar.hidden {
 #custom-endl{
     padding-left: 10px;
     border-radius: 5px 0 0 5px;
-}
-
-#custom-sep{
-    padding-left: 5px;
-    border-radius: 0px;
 }
 
