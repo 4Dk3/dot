@@ -1,4 +1,4 @@
-evdev:input:b0003v04D9p1503*
+evdev:input:b0002v0C45pA512*
  KEYBOARD_KEY_70039=leftmeta  # bind capslock to leftmeta
 
 evdev:atkbd:dmi:*            # built-in keyboard: match all AT keyboards for now

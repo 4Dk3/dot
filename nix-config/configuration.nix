@@ -39,6 +39,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   networking.hostName = "powr4e";
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -139,8 +140,12 @@
     pavucontrol
     docker
     vscode
+    heroic
     rofi
     python3Full
+    vulkan-loader
+    vulkan-headers
+    vulkan-validation-layers
     pulseaudio
     wineWowPackages.staging
     pamixer
@@ -153,6 +158,7 @@
     picom-next
     kdenlive
     obs-studio
+    spicetify-cli
     mako
     wofi
     xdg-utils
@@ -160,6 +166,7 @@
     #Gaming
     lutris
     gamescope
+    xonotic
     #nix-gaming.packages.${pkgs.hostPlatform.system}.wine-tkg
     #nix-gaming.packages.${pkgs.hostPlatform.system}.proton-ge
 
@@ -172,6 +179,7 @@
     gnomeExtensions.dock-from-dash
     gnome.gnome-tweaks
     adw-gtk3
+    gradience
 
     #Sway
     swaybg
@@ -189,7 +197,7 @@
   };
 
   services.udev.extraHwdb = ''
-evdev:input:b0003v04D9p1503*
+evdev:input:b0002v0C45pA512*
  KEYBOARD_KEY_70039=leftmeta
 
 evdev:atkbd:dmi:*            
