@@ -197,7 +197,7 @@
   };
 
   services.udev.extraHwdb = ''
-evdev:input:b0002v0C45pA512*
+evdev:input:b0003v0C45pA512*
  KEYBOARD_KEY_70039=leftmeta
 
 evdev:atkbd:dmi:*            

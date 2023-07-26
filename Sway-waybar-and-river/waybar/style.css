@@ -3,11 +3,13 @@
     /*font-family: manrope;*/
     font-size: 13px;
     font-weight: bold;
+    /*padding: 2px;
+    margin: 2px;*/
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.2);
-    /*background-color: #242424;*/
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    background-color: #1f1f28;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -21,55 +23,65 @@ window#waybar.hidden {
     background-color: #1f1f28;
     border-radius: 0px;
     color: #cecece;
-    padding: 0px
+    padding: 0px;
+    margin: 2px;
 }
 
-#workspaces button.active {
-    color: #ffffff;
-    background-color: #1f1f28;
-    border-top: 2px solid #ffffff;
+#workspaces button.focused {
+    color: #1f1f28;
+    background-color: #ffffff;
+    margin: 2px;
 }
 
-#clock,
-#battery,
-#backlight,
-#network,
-#pulseaudio,
-#tray,
-#mode,
-#window,
-#custom-activities,
-#taskbar,
-#custom-space,
-#custom-endr,
-#custom-endl,
 #custom-nix,
 #workspaces,
-#taskbar,
+#pulseaudio,
+#backlight,
+#battery,
+#temperature,
+#language,
+#clock,
+#tray,
 #idle_inhibitor{
     background-color: #1f1f28;
     border-radius: 0px;
-    padding: 0px 5px 0px 5px;
-    margin: 4px 0px 4px 0px;
+    padding: 2px;
+    margin: 0px 10px 0px 10px;
     color: #ffffff;
     
 }
 
+#pulseaudio {
+    background-color: #cc241d;
+}
+
+#backlight {
+    background-color: #98971a;
+}
+
+#battery {
+    background-color: #d79921;
+}
+
+#temperature {
+    background-color: #b16286;
+}
+
+#language {
+    background-color: #689d6a;
+}
+
+#clock {
+    background-color: #458588;
+}
+
 #tray {
-
-    padding: 0 10px 0 10px;
-    margin-right: 5px;
-    border-radius: 5px;
-
+    background-color: #a89984;
 }
 
 #custom-nix {
+    background-color: #ffffff;
     font-size: 20px;
-}
-
-#taskbar {
-    color: #ffffff;
-    border-radius: 0px;
 }
 
 #taskbar button {
@@ -79,15 +91,5 @@ window#waybar.hidden {
 #taskbar button.active {
     border-top: 2px solid #ffffff;
     border-radius: 0px;
-}
-
-#custom-endr{
-    padding-right: 10px;   
-    border-radius: 0 5px 5px 0;
-}
-
-#custom-endl{
-    padding-left: 10px;
-    border-radius: 5px 0 0 5px;
 }
 
