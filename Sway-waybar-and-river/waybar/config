@@ -1,22 +1,22 @@
 {
-    "layer": "bottom", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     "position": "left", // Waybar position (top|bottom|left|right)
     //"height": 25, // Waybar height (to be removed for auto height)
-    //"width": 30, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "width": 30, // Waybar width
+    "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": [],
+    "modules-left": ["custom/nix"],
     "modules-center": [
-        "custom/nix", "sway/workspaces"
+        "sway/workspaces"
     ],
     "modules-right": [
+        "tray",
         "pulseaudio",
         "backlight",
         "battery",
         "temperature",
         "sway/language",
-        "clock",
-        "tray"
+        "clock"
     ],
     // Modules configuration
     "sway/workspaces": {
@@ -34,7 +34,7 @@
             "9": "九",
     },
     "tray": {
-        "icon-size": 15,
+        "icon-size": 16,
         "spacing": 10
     },
     "clock": {
@@ -56,7 +56,7 @@
         ]
     },
     "backlight": {
-        "format": "{percent}%",
+        "format": "{icon}{percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
 

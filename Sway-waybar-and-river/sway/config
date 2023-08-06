@@ -10,7 +10,7 @@ set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim -g "$(slurp)" 
 set $web firefox
-set $fm nautilus
+set $fm thunar
 set $spotify flatpak run com.spotify.Client
 set $code code
 set $disc flatpak run xyz.armcord.ArmCord

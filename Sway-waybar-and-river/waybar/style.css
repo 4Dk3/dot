@@ -52,31 +52,31 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    background-color: #cc241d;
+    color: #cc241d;
 }
 
 #backlight {
-    background-color: #98971a;
+    color: #98971a;
 }
 
 #battery {
-    background-color: #d79921;
+    color: #d79921;
 }
 
 #temperature {
-    background-color: #b16286;
+    color: #b16286;
 }
 
 #language {
-    background-color: #689d6a;
+    color: #689d6a;
 }
 
 #clock {
-    background-color: #458588;
+    color: #458588;
 }
 
 #tray {
-    background-color: #a89984;
+    color: #a89984;
 }
 
 #custom-nix {
