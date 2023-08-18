@@ -260,6 +260,7 @@ smart_borders on
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id dbus-launch mako
 exec systemctl --user import-environment
+exec dbus-launch pipewire
 
 # set floating (nontiling)for apps needing it
 for_window [class="Yad" instance="yad"] floating enable
