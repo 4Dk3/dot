@@ -1,32 +1,15 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+## REMEMBER, IF YOU ARE USING THIS CONFIG, CHANGE THE HARDWARE-CONFIGURATION.NIX IN ORDER TO AVOID ISSUES. :D
 
-{ config, pkgs, ... }: let
-  nix-gaming = import (builtins.fetchTarball "https://github.com/fufexan/nix-gaming/archive/master.tar.gz");
-  in {
+{ config, pkgs, ... }:
+
+{
   imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+    [ # Include hardware scans (UUI Labels), Desktop packages and configurations (Xfce, Sway, Hypr etc), Packages (All System packages) and All system variables (Printing, Bluetooth, Programs activation etc).
+     ./hardware-configuration.nix
+     ./desktop.nix
+     ./packages.nix
+     ./services-and-environment.nix
     ];
-  
-  # Overlays
-
-  # Waybar experimental overlay
-    nixpkgs.overlays = [
-    (self: super: {
-      waybar = super.waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
-      });
-    })
-  ];
-
-
-  # Cachix for gaming
-  nix.settings = {
-    substituters = ["https://nix-gaming.cachix.org"];
-    trusted-public-keys = ["nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="];
-  };
 
   # Auto-update and Auto-Cleaning
    system.autoUpgrade = {
@@ -34,6 +17,7 @@
   };
 
   nix.settings.auto-optimise-store = true;
+  nix.optimise.automatic = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -62,58 +46,6 @@
     LC_TIME = "es_CO.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  environment.gnome.excludePackages = (with pkgs; [
-  gnome-photos
-  xdg-desktop-portal-gnome
-  gnome-tour
-]);
-
-  # Enable Hyprland
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  # Enable Sway
-  programs.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true;
-    };
-
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "latam";
-    xkbVariant = "";
-  };
-
-  # Configure console keymap
-  console.keyMap = "la-latin1";
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-    #media-session.enable = true;
-  };
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.powr4e = {
     isNormalUser = true;
@@ -122,173 +54,22 @@
     extraGroups = [ "networkmanager" "wheel" "video" "audio" "docker"];
   };
 
-  # Define defaults shell system-wide
-  environment.shells = with pkgs; [ fish ];
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Install system packages
-  environment.systemPackages = with pkgs; [
-    firefox
-    chromium
-    neovim
-    wget
-    git
-    neofetch
-    alacritty
-    pavucontrol
-    docker
-    vscode
-    heroic
-    rofi
-    python3Full
-    vulkan-loader
-    vulkan-headers
-    vulkan-validation-layers
-    pulseaudio
-    wineWowPackages.staging
-    pamixer
-    blueman
-    lxappearance
-    flameshot
-    waybar
-    htop
-    jdk
-    picom-next
-    kdenlive
-    obs-studio
-    spicetify-cli
-    mako
-    wofi
-    xdg-utils
-  
-    #Gaming
-    lutris
-    gamescope
-    xonotic
-    #nix-gaming.packages.${pkgs.hostPlatform.system}.wine-tkg
-    #nix-gaming.packages.${pkgs.hostPlatform.system}.proton-ge
+  # Define defaults shell system-wide
+  environment.shells = with pkgs; [ fish ];
 
-    #Fish
-    fishPlugins.bobthefish
+  # Solve a kinda buggy upgrade?
+  nixpkgs.config.permittedInsecurePackages = [
+                "electron-24.8.6"
+  ];
 
-    #Gnome
-    gnomeExtensions.unite
-    gnomeExtensions.just-perfection
-    gnomeExtensions.dock-from-dash
-    gnome.gnome-tweaks
-    adw-gtk3
-    gradience
-
-    #Sway
-    swaybg
-  ];	
-
-  #################################
-  ##### Environment Variables #####
-  #################################
-
-  environment.sessionVariables = rec {
-    XDG_CACHE_HOME  = "$HOME/.cache";
-    XDG_CONFIG_HOME = "$HOME/.config";
-    XDG_DATA_HOME   = "$HOME/.local/share";
-    XDG_STATE_HOME  = "$HOME/.local/state";
-  };
-
-  services.udev.extraHwdb = ''
-evdev:input:b0003v0C45pA512*
- KEYBOARD_KEY_70039=leftmeta
-
-evdev:atkbd:dmi:*            
- KEYBOARD_KEY_3a=leftmeta
-  '';
-
-  #################################
-  ######## Services ###############
-  #################################
-  
-  # Blueman
-  services.blueman.enable = true;
-
-  # DBUS
-  services.dbus.enable = true;
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-wlr ];
-  };
-  programs.dconf.enable = true;
-
-  # Dri
-  hardware.opengl = {
-    enable = true;
-    driSupport32Bit = true;
-    extraPackages = with pkgs; [
-      intel-media-driver # LIBVA_DRIVER_NAME=iHD
-      ]; 
-  };
-  
-  # Intel
-  hardware.cpu.intel.updateMicrocode = true;
-
-  # Java
-  programs.java.enable = true;
-
-  # Font
-  fonts.fonts = with pkgs; [
-  (nerdfonts.override { fonts = [ "FiraCode" "CascadiaCode" ]; })
-];
-
-  # Steam
-  programs.steam = {
-  	enable = true;
-  	remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-  	dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-};
-  programs.gamemode.enable = true;
-
-  # Shell
-  programs.fish.enable = true;
-
-  # Brightness
-  programs.light.enable = true;
-
-  # Media codecs for fastest video playback
-  nixpkgs.config.packageOverrides = pkgs: {
-    vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
-  };
-
-  # Undervolt
-  services.undervolt.enable = true;
-  services.undervolt.analogioOffset = -60;
-  services.undervolt.coreOffset = -50;
-  services.undervolt.gpuOffset = -50;
-  services.undervolt.p1.limit = 255;
-  services.undervolt.p1.window = 90000;
-  services.undervolt.p2.limit = 255;
-  services.undervolt.p2.window = 90000;
-
-  # Flatpak
-  services.flatpak.enable = true;
-
-  # Power Profiles Daemon
-  services.power-profiles-daemon.enable = true;
-  
-  # SSH
-  services.openssh.enable = true;
+################################################################################
+################################ DON'T TOUCH ###################################
+################################################################################
 
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-  ################################################################################
-  ################################ DON'T TOUCH ###################################
-  ################################################################################
 
 
 
