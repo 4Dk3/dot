@@ -17,7 +17,8 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   bg $HOME/Wallpapers/brown-kdb2.png fill
+   #bg $HOME/Wallpapers/eva01.png fill
+   bg #1d2021 solid_color
 }
 
 output HDMI-A-1 pos 1360 0 res 1920x1080
@@ -30,8 +31,8 @@ focus output HDMI-A-1
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'adw-gtk3'
-    gsettings set $gnome-schema icon-theme 'breeze'
+    gsettings set $gnome-schema gtk-theme 'Colloid-Dark'
+    gsettings set $gnome-schema icon-theme 'Colloid-dark'
     gsettings set $gnome-schema font-name 'CaskaydiaCove Nerd Font'
 }
 
@@ -46,11 +47,11 @@ font CaskaydiaCove Nerd Font bold 8
        tap enabled
        natural_scroll false
        middle_emulation false
-	}
+	      } 
 
        input "6127:24590:PixArt_Lenovo_USB_Optical_Mouse" {
-       accel_profile "flat"
-	}
+            accel_profile "flat"
+	      }
 
        input "type:keyboard" {
             xkb_layout us
@@ -260,7 +261,10 @@ smart_borders on
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id dbus-launch mako
 exec systemctl --user import-environment
-exec dbus-launch pipewire
+
+# Only use this in non-systemd, In systemd it creates bugs
+
+#exec dbus-launch pipewire
 
 # set floating (nontiling)for apps needing it
 for_window [class="Yad" instance="yad"] floating enable
@@ -276,11 +280,11 @@ for_window [app_id="Popsicle"] floating enable
 #for_window [class="discord" instance="discord"] floating enable
 
 #### Sway Window Colors ####
-set $unfocused  #242424
-set $urgent     #f8928a
-set $normal     #5f3343
-set $inactive   #242424
-set $text	#ffffff
+set $unfocused  #1d2021
+set $urgent     #9d0006
+set $normal     #a89984
+set $inactive   #1d2021
+set $text	      #1d2021
 
 # colors                    border        bg          text         indicator   chld_brdr
 client.focused              $normal     $normal     $text          $normal     $normal

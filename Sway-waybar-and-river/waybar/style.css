@@ -1,0 +1,131 @@
+* {
+	border: none;
+	border-radius: 0px;
+  font-family: "CaskaydiaCove Nerd Font" ;
+	font-size: 14px;
+	min-height: 10px;
+}
+
+window#waybar {
+	background: #1d2021;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+/*#window {
+	margin-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+  color: transparent;
+	background: transparent;
+}*/
+
+#workspaces button {
+        padding: 0px;
+        margin: 10px 0px 10px 0px;
+        background-color: #1d2021;
+        color: #a89984;
+        min-width: 36px;
+        border-radius: 0px;
+        border-top: 3px solid #b16286;
+}
+
+/*#workspaces button.active {
+        padding: 40px;
+        margin: 0px;
+        background-color: #a89984;
+        color: #1d2021;
+}*/
+
+#workspaces button:hover {
+        background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+        background-color: #32302f;
+        color: #a89984;
+        border-top: 5px solid #b16286;
+}
+
+#workspaces button.urgent {
+        background-color: #fb4934;
+}
+/*
+#window,
+#workspaces {
+        margin: 0 4px;
+}
+*/
+.modules-left > widget:first-child > #workspaces {
+        margin-left: 0;
+}
+ 
+.modules-right > widget:first-child > #workspaces {
+        margin-right: 0;
+}
+
+#network,
+#pulseaudio,
+#battery,
+#battery.charging,
+#battery.plugged,
+#backlight,
+#clock,
+#memory,
+#cpu,
+#tray,
+#custom-launcher,
+#custom-power{
+	padding: 0px 15px 0px 15px;
+	margin: 12px 0px 12px 0px;
+	border-radius: 0px;
+	transition: none;
+	color: #a89984;
+	background: #1d2021;
+  border-top: 5px solid #b16286;
+}
+
+/*
+#battery,
+#battery.charging,
+#battery.plugged {
+  border-color: #b16286
+}
+
+#network,
+#tray {
+  border-color: #d65d0e
+}
+
+#pulseaudio,
+#memory {
+  border-color: #689d6a
+}
+
+#backlight,
+#cpu {
+  border-color: #d79921
+}
+
+#clock {
+  border-color: #cc241d
+}
+
+#custom-power {
+  border-color: #5f3343
+}
+
+*/
+
+#custom-launcher {
+	font-size: 20px;
+	color: #a89984;
+}
+
+#custom-power {
+	font-size: 20px;
+}

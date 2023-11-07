@@ -1,50 +1,16 @@
 { pkgs, ... }:
 
 {
+  # Packages for plasma to work/have my config
   environment = {
     systemPackages = with pkgs; [
-      blueman
       chromium
-      elementary-xfce-icon-theme
       firefox
-      font-manager
-      libqalculate
-      libreoffice
-      orca
-      pavucontrol
-      qalculate-gtk
-      thunderbird
-      rofi
+      blueman
       adw-gtk3
-      wmctrl
-      xclip
-      xcolor
-      xcolor
-      xdo
-      xdotool
-      xfce.catfish
-      xfce.gigolo
-      xfce.orage
-      xfce.xfburn
-      xfce.xfce4-appfinder
-      xfce.xfce4-clipman-plugin
-      xfce.xfce4-cpugraph-plugin
-      xfce.xfce4-dict
-      xfce.xfce4-fsguard-plugin
-      xfce.xfce4-genmon-plugin
-      xfce.xfce4-netload-plugin
-      xfce.xfce4-panel
-      xfce.xfce4-pulseaudio-plugin
-      xfce.xfce4-systemload-plugin
-      xfce.xfce4-weather-plugin
-      xfce.xfce4-whiskermenu-plugin
-      xfce.xfce4-xkb-plugin
-      xfce.xfdashboard
-      xorg.xev
-      xsel
-      xtitle
-      xwinmosaic
-      zuki-themes
+      colloid-kde
+      colloid-gtk-theme
+      colloid-icon-theme
     ];
   };
 
@@ -76,7 +42,7 @@
     };
   };
 
-  security.pam.services.gdm.enableGnomeKeyring = true;
+  #security.pam.services.gdm.enableGnomeKeyring = true;
   
   # Enable necessary services such as pipewire
 
@@ -101,19 +67,23 @@
       enable = true;
       layout = "us";
       xkbVariant = "";
-      excludePackages = with pkgs; [
-        xterm
-      ];
-      displayManager = {
-        lightdm = {
-          enable = true;
-          greeters.slick = {
-            enable = true;
-            theme.name = "Zukitre-dark";
-          };
+      
+      # Disable mouse acceleration
+
+      libinput = {
+      enable = true;
+      mouse = {
+        accelProfile = "flat";
         };
       };
-      desktopManager.xfce.enable = true;
+
+      # Enable Plasma
+      displayManager =  {
+        sddm.enable = true;
+        defaultSession = "plasmawayland";
+      };
+      desktopManager.plasma5.enable = true;
+
     };
   };
 
