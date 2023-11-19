@@ -21,11 +21,9 @@
     pulseaudio
     wineWowPackages.staging
     pamixer
-    flameshot
     waybar
     htop
     jdk
-    picom-next
     kdenlive
     obs-studio
     spicetify-cli
@@ -38,6 +36,8 @@
     distrobox
     adw-gtk3
     glib
+    eww-wayland
+    eww
   
     #Gaming
     lutris

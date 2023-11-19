@@ -18,12 +18,27 @@
 
   nix.settings.auto-optimise-store = true;
   nix.optimise.automatic = true;
+  environment.pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw 
+  
+  # Swappiness
+  boot.kernel.sysctl = { "vm.swappiness" = 20;};
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   networking.hostName = "powr4e";
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  # Default Kernel
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  # Xanmod Kernel
+  # boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
+
+  # Liquorix Kernel
+  #boot.kernelPackages = pkgs.linuxPackages_lqx;
+  
+  # Zen Kernel
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Enable networking
   networking.networkmanager.enable = true;
