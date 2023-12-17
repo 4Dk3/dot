@@ -1,0 +1,50 @@
+/* Buttons */
+
+%button {
+  @include button(normal);
+  &:focus { @include button(focus); }
+  &:hover { @include button(hover); }
+  &:active { @include button(active); }
+  &:insensitive { @include button(insensitive); }
+}
+
+%flat_button {
+  @include button(flat-normal);
+  &:focus { @include button(flat-focus); }
+  &:hover { @include button(flat-hover); }
+  &:active { @include button(flat-active); }
+  &:insensitive { @include button(flat-insensitive); }
+}
+
+%osd_button {
+  @include button(flat-normal, $tc:on($osd), $bc:$osd);
+  &:insensitive { @include button(insensitive, $tc:on($osd), $bc:$osd); }
+  &:focus { @include button(focus, $tc:on($osd), $bc:$osd); }
+  &:hover { @include button(hover, $tc:on($osd), $bc:$osd); }
+  &:active { @include button(active, $tc:on($osd), $bc:$osd); }
+  &:outlined,&:checked { @include button(checked); }
+}
+
+.button {
+  min-height: 20px;
+  padding: $base_padding $base_padding * 2;
+  border-radius: $base_radius;
+  border: none;
+
+  .popup-menu & {
+    @extend %flat_button;
+  }
+}
+
+.icon-button {
+  @extend %button; // same style as buttons
+
+  border-radius: $circular_radius;
+  padding: $base_padding * 2;
+  min-height: 16px;
+
+  StIcon {
+    icon-size: $base_icon_size;
+    -st-icon-style: symbolic;
+  }
+}

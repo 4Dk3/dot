@@ -1,0 +1,74 @@
+// Search entry
+%search-entry, .search-entry {
+  width: 320px;
+  min-height: $item_size;
+  padding: 0 $base_padding * 2;
+  transition-duration: 150ms;
+  border-radius: $base_radius;
+  caret-color: on($osd);
+  selection-background-color: on($osd, divider);
+  selected-color: on($primary) !important;
+  @include entry(normal, $bc: $osd);
+
+  &:hover {
+    @include entry(hover, $bc: $osd);
+  }
+
+  &:focus {
+    @if $theme == 'grey' {
+      @include entry(focus, $bc: $osd, $fc: white);
+    } @else {
+      @include entry(focus, $bc: $osd);
+    }
+  }
+
+  .search-entry-icon {
+    icon-size: 16px;
+    padding: 0;
+    color: on($osd, secondary-disabled);
+  }
+
+  &:hover, &:focus {
+    .search-entry-icon { color: on($osd, secondary); }
+  }
+
+  &:insensitive {
+    border: none;
+    color: on($osd, secondary-disabled);
+  }
+
+  StLabel.hint-text {
+    color: on($osd, disabled);
+  }
+}
+
+.popup-menu .search-entry { // reset
+  caret-color: $text;
+  selection-background-color: $divider;
+  @include entry(normal);
+
+  &:hover {
+    @include entry(hover);
+  }
+
+  &:focus {
+    @include entry(focus);
+  }
+
+  .search-entry-icon {
+    color: $text-secondary-disabled;
+  }
+
+  &:hover, &:focus {
+    .search-entry-icon { color: $text-secondary; }
+  }
+
+  &:insensitive {
+    border: none;
+    color: $text-secondary-disabled;
+  }
+
+  StLabel.hint-text {
+    color: $text-disabled;
+  }
+}
