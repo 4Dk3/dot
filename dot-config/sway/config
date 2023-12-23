@@ -31,8 +31,8 @@ focus output HDMI-A-1
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Colloid-Dark'
-    gsettings set $gnome-schema icon-theme 'Colloid-dark'
+    gsettings set $gnome-schema gtk-theme 'adw-gtk3-dark'
+    gsettings set $gnome-schema icon-theme 'Colloid-purple-dark'
     gsettings set $gnome-schema font-name 'CaskaydiaCove Nerd Font'
 }
 

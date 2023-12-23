@@ -86,7 +86,7 @@ window#waybar.hidden {
 	transition: none;
 	color: #a89984;
 	background: #1d2021;
-  border-top: 5px solid #b16286;
+ 	border-top: 5px solid #b16286;
 }
 
 /*
