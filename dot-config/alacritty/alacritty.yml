@@ -1,41 +1,51 @@
 window:
-  opacity: 0.9
+  opacity: 1.0
 scrolling:
  history: 50000
 # Font configuration
 font:
   normal:
     #family: MesloLGS Nerd Font
-    family: CaskaydiaCove Nerd Font
+    #family: CaskaydiaCove Nerd Font
+    family: 0xProto Nerd Font
     style: Regular
   
   size: 12.0
 
-# Colors (Gruvbox Material Dark Medium)
+
+# Colors (Rasmus)
 colors:
+  # Default colors
   primary:
-    background: '0x1d2021'
-    foreground: '0xdfbf8e'
+    background: '#1a1a19'
+    foreground: '#d1d1d1'
 
+  # Cursor colors
+  cursor:
+    text: '#1a1a19'
+    cursor: '#d1d1d1'
+
+  # Normal colors
   normal:
-    black:   '0x665c54'
-    red:     '0xea6962'
-    green:   '0xa9b665'
-    yellow:  '0xe78a4e'
-    blue:    '0x7daea3'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xdfbf8e'
+    black:   '#333332'
+    red:     '#ff968c'
+    green:   '#61957f'
+    yellow:  '#ffc591'
+    blue:    '#8db4d4'
+    magenta: '#de9bc8'
+    cyan:    '#7bb099'
+    white:   '#d1d1d1'
 
+  # Bright colors
   bright:
-    black:   '0x928374'
-    red:     '0xea6962'
-    green:   '0xa9b665'
-    yellow:  '0xe3a84e'
-    blue:    '0x7daea3'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xdfbf8e'
+    black:   '#4c4c4b'
+    red:     '#ffafa5'
+    green:   '#7aae98'
+    yellow:  '#ffdeaa'
+    blue:    '#a6cded'
+    magenta: '#f7b4e1'
+    cyan:    '#94c9b2'
+    white:   '#eaeaea'
 
 cursor:
   style:

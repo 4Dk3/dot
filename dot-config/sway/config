@@ -17,12 +17,12 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   #bg $HOME/Wallpapers/eva01.png fill
-   bg #1d2021 solid_color
+   bg $HOME/Wallpapers/purple43.jpg fill
+   #bg #1d2021 solid_color
 }
 
-output HDMI-A-1 pos 1360 0 res 1920x1080
-output eDP-1 pos 0 0 res 1366x768
+output HDMI-A-1 pos 0 0 res 1920x1080
+output eDP-1 pos 1920 0 res 1366x768
 
 focus output HDMI-A-1
 
@@ -31,14 +31,14 @@ focus output HDMI-A-1
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'adw-gtk3-dark'
+    gsettings set $gnome-schema gtk-theme 'Jasper-Pink-Dark-Compact'
     gsettings set $gnome-schema icon-theme 'Colloid-purple-dark'
-    gsettings set $gnome-schema font-name 'CaskaydiaCove Nerd Font'
+    gsettings set $gnome-schema font-name '0xProto Nerd Font'
 }
 
 
 
-font CaskaydiaCove Nerd Font bold 8
+font 0xProto Nerd Font bold 10
 
 ### Input configuration
 
@@ -258,7 +258,7 @@ smart_gaps on
 smart_borders on
 
 # startup command
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
+#exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
 exec --no-startup-id dbus-launch mako
 exec systemctl --user import-environment
 

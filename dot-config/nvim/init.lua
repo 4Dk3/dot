@@ -2,9 +2,11 @@
 require("Keys")
 require("Packers")
 -- Colorscheme
-vim.g.colors_name = nord
+--vim.g.colors_name = nord
 --vim.cmd("base16-tomorrow-night")
-colorscheme = kanagawa
+--colorscheme = kanagawa
+-- Lua
+vim.cmd [[colorscheme rasmus]]
 
 local o = vim.o
 local bo = vim.bo

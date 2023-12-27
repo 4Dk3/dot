@@ -1,7 +1,7 @@
 -- Packer things
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'
-  use "tanvirtin/monokai.nvim"
+  use 'kvrohit/rasmus.nvim'
   use "ryanoasis/vim-devicons"
   use 'windwp/nvim-autopairs'
   use 'gruvbox-community/gruvbox'
