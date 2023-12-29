@@ -59,7 +59,7 @@
     <property name="snap_to_windows" type="bool" value="false"/>
     <property name="snap_width" type="int" value="10"/>
     <property name="vblank_mode" type="string" value="auto"/>
-    <property name="theme" type="string" value="Jasper-Pink-Dark-Compact"/>
+    <property name="theme" type="string" value="Jasper-Purple-Dark-Compact"/>
     <property name="tile_on_move" type="bool" value="true"/>
     <property name="title_alignment" type="string" value="left"/>
     <property name="title_font" type="string" value="0xProto Nerd Font 9"/>
@@ -82,12 +82,12 @@
     <property name="zoom_desktop" type="bool" value="true"/>
     <property name="zoom_pointer" type="bool" value="true"/>
     <property name="workspace_names" type="array">
-      <value type="string" value="1"/>
-      <value type="string" value="2"/>
-      <value type="string" value="3"/>
-      <value type="string" value="4"/>
-      <value type="string" value="5"/>
-      <value type="string" value="6"/>
+      <value type="string" value=""/>
+      <value type="string" value=""/>
+      <value type="string" value=""/>
+      <value type="string" value=""/>
+      <value type="string" value=""/>
+      <value type="string" value=""/>
     </property>
   </property>
 </channel>

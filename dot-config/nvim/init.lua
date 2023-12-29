@@ -2,11 +2,11 @@
 require("Keys")
 require("Packers")
 -- Colorscheme
---vim.g.colors_name = nord
+vim.g.colors_name = rasmus
 --vim.cmd("base16-tomorrow-night")
---colorscheme = kanagawa
+colorscheme = rasmus
 -- Lua
-vim.cmd [[colorscheme rasmus]]
+--vim.cmd [[colorscheme rasmus]]
 
 local o = vim.o
 local bo = vim.bo
@@ -54,7 +54,7 @@ go.fileencoding = "utf-8"
 
   require('lualine').setup{
     options = {icons_enabled = true,
-    theme = "kanagawa"},
+    theme = "Tomorrow"},
 
     tabline = {},
   }
