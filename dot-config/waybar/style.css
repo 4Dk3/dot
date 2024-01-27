@@ -8,7 +8,7 @@
 
 window#waybar {
 	/*background: #1a1a19;*/
-  background: rgba(0,0,0,0);
+ 	background: rgba(0,0,0,0);
 }
 
 window#waybar.hidden {
@@ -21,13 +21,13 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-  color: transparent;
+  	color: transparent;
 	background: transparent;
 }*/
 
 #workspaces button {
         padding: 0px;
-        margin: 10px 0px 10px 0px;
+        margin: 4px 0px 4px 0px;
         background-color: #1a1a19;
         color: #a89984;
         min-width: 36px;
@@ -82,7 +82,7 @@ window#waybar.hidden {
 #custom-launcher,
 #custom-power{
 	padding: 0px 15px 0px 15px;
-	margin: 12px 0px 12px 0px;
+	margin: 2px 0px 2px 0px;
 	border-radius: 0px;
 	transition: none;
 	color: #a89984;

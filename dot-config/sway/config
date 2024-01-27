@@ -17,8 +17,8 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   bg $HOME/Wallpapers/purple43.jpg fill
-   #bg #1d2021 solid_color
+   bg $HOME/Wallpapers/killlakill-white.png fill
+   #bg #1a1a19 solid_color
 }
 
 output HDMI-A-1 pos 0 0 res 1920x1080
@@ -32,7 +32,7 @@ set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Jasper-Purple-Dark-Compact'
-    gsettings set $gnome-schema icon-theme 'Colloid-grey-dark'
+    gsettings set $gnome-schema icon-theme 'Colloid-dark'
     gsettings set $gnome-schema font-name '0xProto Nerd Font'
 }
 
@@ -193,7 +193,7 @@ font 0xProto Nerd Font bold 10
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+shift+s layout stacking
+    #bindsym $mod+shift+s layout stacking
     bindsym $mod+shift+a layout tabbed
     bindsym $mod+shift+d layout toggle split
 
@@ -264,7 +264,7 @@ exec systemctl --user import-environment
 
 # Only use this in non-systemd, In systemd it creates bugs
 
-exec dbus-launch pipewire
+#exec dbus-launch pipewire
 
 # set floating (nontiling)for apps needing it
 for_window [class="Yad" instance="yad"] floating enable

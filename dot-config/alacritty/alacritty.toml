@@ -1,0 +1,46 @@
+[colors.bright]
+black = "#4c4c4b"
+blue = "#a6cded"
+cyan = "#94c9b2"
+green = "#7aae98"
+magenta = "#f7b4e1"
+red = "#ffafa5"
+white = "#eaeaea"
+yellow = "#ffdeaa"
+
+[colors.cursor]
+cursor = "#d1d1d1"
+text = "#1a1a19"
+
+[colors.normal]
+black = "#333332"
+blue = "#8db4d4"
+cyan = "#7bb099"
+green = "#61957f"
+magenta = "#de9bc8"
+red = "#ff968c"
+white = "#d1d1d1"
+yellow = "#ffc591"
+
+[colors.primary]
+background = "#1a1a19"
+foreground = "#d1d1d1"
+
+[cursor.style]
+shape = "Beam"
+
+[cursor.vi_mode_style]
+shape = "Beam"
+
+[font]
+size = 15.0
+
+[font.normal]
+family = "0xProto Nerd Font"
+style = "Regular"
+
+[scrolling]
+history = 50000
+
+[window]
+opacity = 1.0

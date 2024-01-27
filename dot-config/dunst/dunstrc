@@ -1,5 +1,5 @@
 [global]
-    font = "FuraMono Nerd Font 10"
+    font = "0xProto Nerd Font 10"
     format = "<b>%s</b>\n%b"
     sort = yes
     indicate_hidden = yes
@@ -27,16 +27,16 @@ frame_width = 1
 frame_color = "#c8a0c2"
 
 [urgency_low]
-    background = "#242424"
-    foreground = "#ffffff"
+    background = "#1a1a19"
+    foreground = "#d1d1d1"
     timeout = 5
 
 [urgency_normal]
-    background = "#242424"
-    foreground = "#ffffff"
+    background = "#1a1a19"
+    foreground = "#d1d1d1"
     timeout = 10
 
 [urgency_critical]
-    background = "#242424"
-    foreground = "#ffffff"
+    background = "#1a1a19"
+    foreground = "#d1d1d1"
     timeout = 20

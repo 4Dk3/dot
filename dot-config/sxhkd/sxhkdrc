@@ -1,0 +1,112 @@
+# =============================================================================
+# APPLICATIONS
+# =============================================================================
+
+# terminal emulator
+super + c
+	alacritty
+
+# program launcher
+super + space
+  rofi -show drun -I
+
+# powermenu
+super + shift + q
+	pkill bspwm
+
+# web browser
+super + w
+    firefox
+
+# file explorer
+super + f
+    thunar
+
+# make sxhkd reload its configuration files:
+super + shift + r
+    pkill -USR1 -x sxhkd
+
+# menu
+~button3
+    xqp 0 $(xdo id -N Bspwm -n root) && jgmenu_run
+
+# lock screen
+super + shift + x
+    betterlockscreen -l
+
+# volume control
+super + F2
+    pactl set-sink-volume @DEFAULT_SINK@ -5% 
+super + F3
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+super + F1
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+super + F4
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle 
+
+# =============================================================================
+# BSPWM HOTKEYS
+# =============================================================================
+
+# restart bspwm
+super + alt + r
+	bspc wm -r
+
+# close and kill
+super + q
+	bspc node -{c,k}
+
+# cycle between floating and tiled windows
+#super + Tab
+#	bspc node -f {next,prev}.local.!hidden.window; bspc node last.local --layer below; bspc node focused --layer normal
+
+# alternate between the tiled and monocle layout
+super + shift + space
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest window
+super + g
+	bspc node -s biggest.window
+
+# set the window state
+super + shift + {a,s,d}
+	bspc node -t {tiled,floating,fullscreen}
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus or send to the given desktop
+super + {_,alt + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# preselect the direction
+super + alt + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# cancel the preselection for the focused node
+super + alt + space
+	bspc node -p cancel
+
+# expand a window by moving one of its side outward
+super + ctrl + {h,j,k,l}
+    bspc node -z {left -50 0 || bspc node -z right -50 0, \
+                  bottom 0 50 || bspc node -z top 0 50, \
+                  top 0 -50 || bspc node -z bottom 0 -50, \
+                  right 50 0 || bspc node -z left 50 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-50 0,0 50,0 -50,50 0}
