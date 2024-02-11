@@ -12,31 +12,21 @@
       adw-gtk3
       picom-allusive
       #colloid-gtk-theme
-      #colloid-icon-theme
+      colloid-icon-theme
       gruvbox-gtk-theme
       gruvbox-dark-icons-gtk
+      kde-gruvbox
+      gnome.gnome-tweaks
+      gnomeExtensions.unite
 
       # For AwesomeWM or i3
       rofi
-      plank
-      xfce.xfce4-appfinder
-      xfce.xfce4-clipman-plugin
-      xfce.xfce4-cpugraph-plugin
-      xfce.xfce4-dict
-      xfce.xfce4-fsguard-plugin
-      xfce.xfce4-genmon-plugin
-      xfce.xfce4-netload-plugin
-      xfce.xfce4-panel
-      xfce.xfce4-pulseaudio-plugin
-      xfce.xfce4-systemload-plugin
-      xfce.xfce4-weather-plugin
-      xfce.xfce4-whiskermenu-plugin
-      xfce.xfce4-xkb-plugin
-      xfce.xfce4-notifyd
-      xfce.xfdashboard
-
-
-
+      bspwm
+      sxhkd
+      lemonbar
+      polybarFull
+      feh
+      dunst
     ];
   };
 
@@ -93,11 +83,10 @@
 
     xserver = {
       enable = true;
-      layout = "us";
-      xkbVariant = "";
+      xkb.layout = "us";
+      xkb.variant = "";
       
       # Disable mouse acceleration
-
       libinput = {
       enable = true;
       mouse = {
@@ -105,33 +94,15 @@
         };
       };
 
-      # Enable Plasma
-      #displayManager =  {
-      #  sddm.enable = true;
-      #  defaultSession = "plasmawayland";
-      #};
-      #desktopManager.plasma5.enable = true;
-
-      # Enable XFCE4
-      desktopManager = {
-        xterm.enable = false;
-        xfce.enable = true;
-      };
-
+      # gnome
       displayManager = {
-        lightdm = {
-          enable = true;
-        };
+        gdm.enable = true;
       };
+      desktopManager.gnome.enable = true;
 
-      # Enable i3
-      windowManager.i3 = {
-      enable = true;
-      extraPackages = with pkgs; [
-        polybar
-        feh
-        flameshot
-     ];
+      # Enable bspWM
+      windowManager.bspwm = {
+        enable = true;
     };
   };
 };

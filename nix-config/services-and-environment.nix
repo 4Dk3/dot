@@ -69,7 +69,7 @@ evdev:atkbd:dmi:*
 
   # Font
   fonts.packages = with pkgs; [
-  (nerdfonts.override { fonts = [ "FiraCode" "CascadiaCode" "JetBrainsMono"]; })
+  (nerdfonts.override { fonts = [ "FiraCode" "CascadiaCode" "JetBrainsMono" "0xProto"]; })
   inter
 ];
 

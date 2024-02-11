@@ -31,13 +31,13 @@
     wofi
     xdg-utils
     spicetify-cli
-    spotify
-    armcord
     distrobox
     adw-gtk3
     glib
     eww-wayland
     eww
+    gcc
+    playerctl
   
     #Gaming
     lutris
@@ -47,7 +47,7 @@
     #nix-gaming.packages.${pkgs.hostPlatform.system}.proton-ge
 
     #Fish
-    fishPlugins.bobthefish
+    fishPlugins.pure
 
     #Sway
     swaybg

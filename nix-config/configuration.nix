@@ -16,6 +16,7 @@
       enable = true;
   };
 
+  nix.package = pkgs.nixUnstable;
   nix.settings.auto-optimise-store = true;
   nix.optimise.automatic = true;
   environment.pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw 
@@ -35,10 +36,10 @@
   # boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
 
   # Liquorix Kernel
-  #boot.kernelPackages = pkgs.linuxPackages_lqx;
+  boot.kernelPackages = pkgs.linuxPackages_lqx;
   
   # Zen Kernel
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  #boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Enable networking
   networking.networkmanager.enable = true;
