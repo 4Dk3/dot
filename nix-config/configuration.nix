@@ -16,7 +16,7 @@
       enable = true;
   };
 
-  nix.package = pkgs.nixUnstable;
+  #nix.package = pkgs.nixUnstable;
   nix.settings.auto-optimise-store = true;
   nix.optimise.automatic = true;
   environment.pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw 

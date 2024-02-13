@@ -96,9 +96,12 @@
 
       # gnome
       displayManager = {
-        gdm.enable = true;
-      };
+        gdm = {
+          enable = true;
+          };
+        };
       desktopManager.gnome.enable = true;
+
 
       # Enable bspWM
       windowManager.bspwm = {
