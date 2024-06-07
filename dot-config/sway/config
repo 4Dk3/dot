@@ -17,7 +17,7 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   bg $HOME/Wallpapers/killlakill-white.png fill
+   bg $HOME/Wallpapers/haskell-black.png fill
    #bg #1a1a19 solid_color
 }
 
@@ -31,14 +31,14 @@ focus output HDMI-A-1
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Jasper-Purple-Dark-Compact'
+    gsettings set $gnome-schema gtk-theme 'adw-gtk3-dark'
     gsettings set $gnome-schema icon-theme 'Colloid-dark'
     gsettings set $gnome-schema font-name '0xProto Nerd Font'
 }
 
 
 
-font 0xProto Nerd Font bold 10
+font Inconsolata Nerd Font bold 10
 
 ### Input configuration
 
