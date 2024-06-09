@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Jasper-Purple-Dark-Compact"/>
-    <property name="IconThemeName" type="string" value="Colloid-grey-dark"/>
+    <property name="ThemeName" type="string" value="Jasper-Purple-Dark"/>
+    <property name="IconThemeName" type="string" value="Qogir-dark"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -24,7 +24,7 @@
     <property name="CanChangeAccels" type="empty"/>
     <property name="ColorPalette" type="empty"/>
     <property name="FontName" type="string" value="Inter 12"/>
-    <property name="MonospaceFontName" type="string" value="0xProto Nerd Font 12"/>
+    <property name="MonospaceFontName" type="string" value="Inconsolata Nerd Font Mono 12"/>
     <property name="IconSizes" type="empty"/>
     <property name="KeyThemeName" type="empty"/>
     <property name="ToolbarStyle" type="empty"/>

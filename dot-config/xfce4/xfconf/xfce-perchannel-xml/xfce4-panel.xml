@@ -35,6 +35,9 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (83%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (65%)"/>
+        <value type="string" value="wi-fi network connection “internet casa” active: internet casa (71%)"/>
         <value type="string" value="wi-fi network connection “internet casa” active: internet casa (80%)"/>
         <value type="string" value="wi-fi network connection “internet casa” active: internet casa (79%)"/>
         <value type="string" value="wi-fi network connection “internet casa” active: internet casa (76%)"/>
@@ -45,8 +48,8 @@
       </property>
       <property name="known-items" type="array">
         <value type="string" value="flameshot"/>
-        <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="blueman"/>
+        <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="steam"/>
       </property>
     </property>
@@ -54,7 +57,7 @@
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
       <property name="mpris-players" type="string" value="firefox.instance9352;firefox.instance_1_52"/>
-      <property name="known-players" type="string" value="Chromium;Firefox Web Browser;Spotify"/>
+      <property name="known-players" type="string" value="Chromium;firefox;Firefox Web Browser;spotify;Spotify"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
