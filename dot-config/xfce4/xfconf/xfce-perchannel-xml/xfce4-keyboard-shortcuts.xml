@@ -14,12 +14,13 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="empty"/>
       <property name="XF86Display" type="empty"/>
-      <property name="&lt;Super&gt;p" type="empty"/>
       <property name="&lt;Primary&gt;Escape" type="empty"/>
       <property name="XF86WWW" type="empty"/>
-      <property name="HomePage" type="empty"/>
       <property name="XF86Mail" type="empty"/>
       <property name="Print" type="empty"/>
+      <property name="Super_L" type="empty"/>
+      <property name="&lt;Super&gt;p" type="empty"/>
+      <property name="HomePage" type="empty"/>
       <property name="&lt;Alt&gt;Print" type="empty"/>
       <property name="&lt;Shift&gt;Print" type="empty"/>
       <property name="&lt;Super&gt;e" type="empty"/>
@@ -48,31 +49,10 @@
       <property name="&lt;Alt&gt;F3" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Alt&gt;F2" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="XF86LogOff" type="string" value="xfce4-session-logout"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Super&gt;w" type="string" value="firefox"/>
-      <property name="&lt;Super&gt;f" type="string" value="thunar"/>
-      <property name="&lt;Super&gt;c" type="string" value="alacritty"/>
-      <property name="&lt;Super&gt;F4" type="string" value="pactl set-source-mute @DEFAULT_SOURCE@ toggle">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
-      <property name="&lt;Super&gt;F2" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -5%">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
-      <property name="&lt;Super&gt;F3" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +5%">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
-      <property name="&lt;Super&gt;F1" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
-      <property name="&lt;Super&gt;F11" type="string" value="light -U 5"/>
-      <property name="&lt;Super&gt;F12" type="string" value="light -A 5"/>
-      <property name="&lt;Super&gt;space" type="string" value="rofi -show drun -show-icons -theme ~/.config/rofi/style-13.rasi"/>
-      <property name="&lt;Super&gt;s" type="string" value="flameshot gui"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -116,7 +96,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Right" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Up" type="empty"/>
-      <property name="&lt;Super&gt;Tab" type="empty"/>
+      <property name="&lt;Alt&gt;grave" type="empty"/>
       <property name="&lt;Primary&gt;F1" type="empty"/>
       <property name="&lt;Primary&gt;F2" type="empty"/>
       <property name="&lt;Primary&gt;F3" type="empty"/>
@@ -129,6 +109,7 @@
       <property name="&lt;Primary&gt;F10" type="empty"/>
       <property name="&lt;Primary&gt;F11" type="empty"/>
       <property name="&lt;Primary&gt;F12" type="empty"/>
+      <property name="&lt;Super&gt;Tab" type="empty"/>
       <property name="&lt;Super&gt;KP_Left" type="empty"/>
       <property name="&lt;Super&gt;KP_Right" type="empty"/>
       <property name="&lt;Super&gt;KP_Down" type="empty"/>

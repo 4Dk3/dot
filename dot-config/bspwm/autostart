@@ -1,7 +1,9 @@
-feh --bg-fill ~/Wallpapers/matoi2.png 
+feh --bg-fill ~/Wallpapers/mani-zenin-new.jpg
 picom -b -f
 polybar &
-dunst
+dunst &
+sxhkd &
+albert &
 
 set $gnome-schema org.gnome.desktop.interface
 gsettings set $gnome-schema gtk-theme 'Jasper-Purple-Dark-Compact'

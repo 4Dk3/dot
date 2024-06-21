@@ -8,7 +8,7 @@ super + c
 
 # program launcher
 super + space
-  rofi -show drun -I
+  albert toggle
 
 # powermenu
 super + shift + q

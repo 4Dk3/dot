@@ -1,30 +1,42 @@
-# Colors (Solarized Dark)
-# Default colors
+# Colors (Kanagawa Dragon)
+# Source https//github.com/rebelot/kanagawa.nvim
+
 [colors.primary]
-background = '#002b36'
-foreground = '#839496'
+background = '#181616'
+foreground = '#c5c9c5'
 
-# Normal colors
 [colors.normal]
-black   = '#073642'
-red     = '#dc322f'
-green   = '#859900'
-yellow  = '#b58900'
-blue    = '#268bd2'
-magenta = '#d33682'
-cyan    = '#2aa198'
-white   = '#eee8d5'
+black = '#0d0c0c'
+blue = '#8ba4b0'
+cyan = '#8ea4a2'
+green = '#8a9a7b'
+magenta = '#a292a3'
+red = '#c4746e'
+white = '#C8C093'
+yellow = '#c4b28a'
 
-# Bright colors
 [colors.bright]
-black   = '#002b36'
-red     = '#cb4b16'
-green   = '#586e75'
-yellow  = '#657b83'
-blue    = '#839496'
-magenta = '#6c71c4'
-cyan    = '#93a1a1'
-white   = '#fdf6e3'
+black = '#a6a69c'
+blue = '#7FB4CA'
+cyan = '#7AA89F'
+green = '#87a987'
+magenta = '#938AA9'
+red = '#E46876'
+white = '#c5c9c5'
+yellow = '#E6C384'
+
+[colors.selection]
+background = '#2d4f67'
+foreground = '#c8c093'
+
+[[colors.indexed_colors]]
+index = 16
+color = '#ffa066'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#ff5d62'
+
 
 [cursor.style]
 shape = "Beam"
@@ -45,3 +57,4 @@ history = 50000
 
 [window]
 opacity = 1.0
+padding = { x = 65, y = 0 }

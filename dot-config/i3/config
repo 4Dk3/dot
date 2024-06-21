@@ -1,15 +1,16 @@
 # General
 set $mod Mod4
-font 0xProto Nerd Font 10
+font Inconsolata Nerd Font 10
 
 # Variables
-set $menu rofi -show drun -show-icons -theme ~/.config/rofi/style-13.rasi
+#set $menu rofi -show drun -show-icons -theme ~/.config/rofi/style-13.rasi
+set $menu albert toggle
 set $srcs flameshot gui
 set $web firefox
 set $fm thunar
-set $spotify flatpak run com.spotify.Client
+set $spotify spotify
 set $code code
-set $disc flatpak run com.discordapp.Discord
+set $disc flatpak run dev.vencord.Vesktop
 set $py pycharm
 set $term alacritty
 
@@ -97,7 +98,7 @@ floating_modifier $mod
 
         # Layouts
         bindsym $mod+Shift+a layout stacking
-        bindsym $mod+Shift+w layout tabbed
+        bindsym $mod+Shift+s layout tabbed
         bindsym $mod+Shift+d layout toggle split
 
         # toggle tiling / floating
@@ -108,6 +109,11 @@ floating_modifier $mod
 
         # focus the parent container
         bindsym $mod+a focus parent
+
+
+
+
+        # workspace
 
         set $ws1 "1"
         set $ws2 "2"
@@ -120,6 +126,17 @@ floating_modifier $mod
         set $ws9 "9"
         set $ws10 "10"
 
+        workspace $ws1 output HDMI-1
+        workspace $ws2 output HDMI-1
+        workspace $ws3 output HDMI-1
+        workspace $ws4 output HDMI-1
+        workspace $ws5 output HDMI-1
+        workspace $ws6 output HDMI-1
+        workspace $ws7 output eDP-1
+        workspace $ws8 output eDP-1
+        workspace $ws9 output eDP-1
+        workspace $ws10 output eDP-1
+        
         # switch to workspace
         bindsym $mod+1 workspace number $ws1
         bindsym $mod+2 workspace number $ws2
@@ -131,7 +148,7 @@ floating_modifier $mod
         bindsym $mod+8 workspace number $ws8
         bindsym $mod+9 workspace number $ws9
         bindsym $mod+0 workspace number $ws10
-
+        
         # move focused container to workspace
         bindsym $mod+Shift+1 move container to workspace number $ws1
         bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -147,7 +164,7 @@ floating_modifier $mod
         # reload the configuration file
         bindsym $mod+Shift+c reload
         bindsym $mod+Shift+r restart
-        bindsym $mod+Shift+q exec pkill i3
+        bindsym $mod+Shift+q exec xfce4-session-logout
 
         # resize window (you can also use the mouse for that)
         mode "resize" {
@@ -165,14 +182,12 @@ floating_modifier $mod
         bindsym $mod+r mode "resize"
 
         # Autostart
-        exec_always --no-startup-id dex --autostart --environment i3
-        exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/baroquecrown.jpg
+        #exec_always --no-startup-id dex --autostart --environment i3
         exec_always --no-startup-id picom -b -f
-        exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
+        exec_always --no-startup-id nitrogen --restore &
         #exec_always --no-startup-id xrandr --output eDP1 --set "scaling mode" "Full aspect"
-        exec_always --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --primary --auto --left-of eDP1
-        exec_always --no-startup-id dunst
-        exec_always --no-startup-id pipewire
+        #exec_always --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --primary --auto --left-of eDP1
+        #exec_always --no-startup-id dunst
 
 # Borders
 

@@ -17,7 +17,7 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   bg $HOME/Wallpapers/haskell-black.png fill
+   bg $HOME/Wallpapers/mani-zenin-new.jpg fill
    #bg #1a1a19 solid_color
 }
 
