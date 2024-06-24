@@ -2,7 +2,8 @@
 # Source https//github.com/rebelot/kanagawa.nvim
 
 [colors.primary]
-background = '#181616'
+#background = '#181616'
+background = '#1c1c1c' # Background color with tmux
 foreground = '#c5c9c5'
 
 [colors.normal]
