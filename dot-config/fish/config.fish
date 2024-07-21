@@ -6,3 +6,5 @@ and not set -q TMUX
         tmux new-session -s 43
     end
 end
+
+fish_add_path ~/.local/bin

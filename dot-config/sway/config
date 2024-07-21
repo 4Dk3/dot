@@ -17,12 +17,12 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   bg $HOME/Wallpapers/mani-zenin-new.jpg fill
+   bg $HOME/Wallpapers/Asuka-Beast.png fill
    #bg #1a1a19 solid_color
 }
 
-output HDMI-A-1 pos 0 0 res 1920x1080
-output eDP-1 pos 1920 0 res 1366x768
+output HDMI-A-1 pos 1366 0 res 1920x1080
+output eDP-1 pos 0 0 res 1366x768
 
 focus output HDMI-A-1
 
