@@ -8,7 +8,7 @@ set $up k
 set $right l
 set $term alacritty
 set $menu wofi --show drun -I
-set $srcs grim -g "$(slurp)" 
+set $srcs grim -g "$(slurp)" - | wl-copy
 set $web firefox
 set $fm thunar
 set $spotify flatpak run com.spotify.Client
@@ -17,7 +17,7 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   bg $HOME/Wallpapers/Asuka-Beast.png fill
+   bg $HOME/Wallpapers/ia-eye.png fill
    #bg #1a1a19 solid_color
 }
 
@@ -31,8 +31,8 @@ focus output HDMI-A-1
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'adw-gtk3-dark'
-    gsettings set $gnome-schema icon-theme 'Colloid-dark'
+    gsettings set $gnome-schema gtk-theme 'Jasper-Grey-Dark-Compact'
+    gsettings set $gnome-schema icon-theme 'Colloid-Grey-Dark'
     gsettings set $gnome-schema font-name '0xProto Nerd Font'
 }
 

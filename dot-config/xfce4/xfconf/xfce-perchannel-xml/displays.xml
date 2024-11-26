@@ -16,7 +16,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1920"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -37,7 +37,7 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="HDMI-1" type="string" value="LG 32&quot;">
+    <property name="HDMI-1" type="string" value="LG Electronics 32&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="a71567aee3dcefa63dc107392c3398669f6f3110"/>
       <property name="Resolution" type="string" value="1920x1080"/>
@@ -50,7 +50,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1366"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -86,7 +86,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="1920"/>
+        <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -107,7 +107,7 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="HDMI-1" type="string" value="LG 32&quot;">
+    <property name="HDMI-1" type="string" value="LG Electronics 32&quot;">
       <property name="Active" type="bool" value="true"/>
       <property name="EDID" type="string" value="a71567aee3dcefa63dc107392c3398669f6f3110"/>
       <property name="Resolution" type="string" value="1920x1080"/>
@@ -120,7 +120,7 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1366"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>

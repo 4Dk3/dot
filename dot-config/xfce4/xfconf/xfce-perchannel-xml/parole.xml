@@ -5,12 +5,12 @@
     <property name="font" type="string" value="Sans Bold 20"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home"/>
+    <property name="last-used-media" type="string" value="/home/powr4e/Downloads"/>
   </property>
   <property name="window" type="empty">
-    <property name="maximized" type="bool" value="true"/>
-    <property name="width" type="int" value="1366"/>
-    <property name="height" type="int" value="742"/>
+    <property name="maximized" type="bool" value="false"/>
+    <property name="width" type="int" value="1920"/>
+    <property name="height" type="int" value="1026"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="100"/>

@@ -49,7 +49,7 @@
         <property name="workspace3" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-shapes.svg"/>
+          <property name="last-image" type="string" value="/home/powr4e/Wallpapers/mitsubishi.jpg"/>
         </property>
         <property name="workspace4" type="empty">
           <property name="color-style" type="int" value="0"/>
@@ -65,7 +65,7 @@
       <property name="monitorHDMI-1" type="empty">
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
-          <property name="image-style" type="int" value="5"/>
+          <property name="image-style" type="int" value="0"/>
           <property name="last-image" type="string" value="/home/powr4e/Wallpapers/anime-smokey.jpg"/>
         </property>
         <property name="workspace1" type="empty">
@@ -81,7 +81,7 @@
         <property name="workspace3" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/nix/store/yq9wys1cscbsxjjxbifk6rrbppkk8hhc-xfdesktop-4.18.1/share/backgrounds/xfce/xfce-shapes.svg"/>
+          <property name="last-image" type="string" value="/home/powr4e/Wallpapers/rx-7red.jpg"/>
         </property>
         <property name="workspace4" type="empty">
           <property name="color-style" type="int" value="0"/>
@@ -159,6 +159,8 @@
         </property>
       </property>
     </property>
+    <property name="single-workspace-mode" type="bool" value="true"/>
+    <property name="single-workspace-number" type="int" value="3"/>
   </property>
   <property name="last" type="empty">
     <property name="window-width" type="int" value="862"/>
