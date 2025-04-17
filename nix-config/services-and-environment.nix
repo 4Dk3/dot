@@ -53,9 +53,9 @@ evdev:atkbd:dmi:*
   programs.dconf.enable = true;
 
   # Dri
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [
       intel-media-driver # LIBVA_DRIVER_NAME=iHD
       ]; 
@@ -93,14 +93,14 @@ evdev:atkbd:dmi:*
   };
 
   # Undervolt
-  services.undervolt.enable = true;
-  services.undervolt.analogioOffset = -60;
-  services.undervolt.coreOffset = -50;
-  services.undervolt.gpuOffset = -50;
-  services.undervolt.p1.limit = 255;
-  services.undervolt.p1.window = 90000;
-  services.undervolt.p2.limit = 255;
-  services.undervolt.p2.window = 90000;
+  #services.undervolt.enable = true;
+  #services.undervolt.analogioOffset = -60;
+  #services.undervolt.coreOffset = -50;
+  #services.undervolt.gpuOffset = -50;
+  #services.undervolt.p1.limit = 255;
+  #services.undervolt.p1.window = 90000;
+  #services.undervolt.p2.limit = 255;
+  #services.undervolt.p2.window = 90000;
 
   # Flatpak
   services.flatpak.enable = true;

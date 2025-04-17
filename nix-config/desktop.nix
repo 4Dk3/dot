@@ -10,13 +10,12 @@
       firefox
       blueman
       adw-gtk3
-      picom-allusive
       #colloid-gtk-theme
       colloid-icon-theme
       gruvbox-gtk-theme
       gruvbox-dark-icons-gtk
       kde-gruvbox
-      gnome.gnome-tweaks
+      gnome-tweaks
       gnomeExtensions.unite
 
       # For AwesomeWM or i3
@@ -68,6 +67,18 @@
     blueman.enable = true;
     gnome.gnome-keyring.enable = true;
 
+    # Libinput
+   
+    # Disable mouse acceleration
+      libinput = {
+      enable = true;
+      mouse = {
+        accelProfile = "flat";
+        };
+      };
+
+
+
     # Sound
 
     pipewire = {
@@ -86,14 +97,6 @@
       xkb.layout = "us";
       xkb.variant = "";
       
-      # Disable mouse acceleration
-      libinput = {
-      enable = true;
-      mouse = {
-        accelProfile = "flat";
-        };
-      };
-
       # gnome
       displayManager = {
         gdm = {
@@ -113,9 +116,9 @@
   # Disable pulse hardware
   hardware.pulseaudio.enable = false;
 
-  sound = {
-    enable = true;
-    mediaKeys.enable = true;
-  };
+  #sound = {
+  #  enable = true;
+  #  mediaKeys.enable = true;
+  #};
   
 }

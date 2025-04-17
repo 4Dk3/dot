@@ -34,7 +34,6 @@
     distrobox
     adw-gtk3
     glib
-    eww-wayland
     eww
     gcc
     playerctl
