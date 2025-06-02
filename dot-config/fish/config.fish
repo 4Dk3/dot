@@ -7,4 +7,5 @@ and not set -q TMUX
     end
 end
 
-fish_add_path ~/.local/bin
+fish_add_path ~/.local/bin 
+fish_add_path ~/bin/idea-IC-251.25410.109/bin/
