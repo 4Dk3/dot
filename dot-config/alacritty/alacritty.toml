@@ -1,43 +1,77 @@
-# Colors (Kanagawa Dragon)
-# Source https//github.com/rebelot/kanagawa.nvim
+# Colors section of "Alacritty - TOML configuration file format"
+# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#colors
 
 [colors.primary]
-#background = '#181616'
-background = '#1c1c1c' # Background color with tmux
-foreground = '#c5c9c5'
+foreground = "#e0def4"
+background = "#191724"
+dim_foreground = "#908caa"
+bright_foreground = "#e0def4"
 
-[colors.normal]
-black = '#0d0c0c'
-blue = '#8ba4b0'
-cyan = '#8ea4a2'
-green = '#8a9a7b'
-magenta = '#a292a3'
-red = '#c4746e'
-white = '#C8C093'
-yellow = '#c4b28a'
+[colors.cursor]
+text = "#e0def4"
+cursor = "#524f67"
 
-[colors.bright]
-black = '#a6a69c'
-blue = '#7FB4CA'
-cyan = '#7AA89F'
-green = '#87a987'
-magenta = '#938AA9'
-red = '#E46876'
-white = '#c5c9c5'
-yellow = '#E6C384'
+[colors.vi_mode_cursor]
+text = "#e0def4"
+cursor = "#524f67"
+
+[colors.search.matches]
+foreground = "#908caa"
+background = "#26233a"
+
+[colors.search.focused_match]
+foreground = "#191724"
+background = "#ebbcba"
+
+[colors.hints.start]
+foreground = "#908caa"
+background = "#1f1d2e"
+
+[colors.hints.end]
+foreground = "#6e6a86"
+background = "#1f1d2e"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.footer_bar]
+foreground = "#e0def4"
+background = "#1f1d2e"
 
 [colors.selection]
-background = '#2d4f67'
-foreground = '#c8c093'
+text = "#e0def4"
+background = "#403d52"
 
-[[colors.indexed_colors]]
-index = 16
-color = '#ffa066'
+[colors.normal]
+black = "#26233a"
+red = "#eb6f92"
+green = "#31748f"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ebbcba"
+white = "#e0def4"
 
-[[colors.indexed_colors]]
-index = 17
-color = '#ff5d62'
+[colors.bright]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#31748f"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ebbcba"
+white = "#e0def4"
 
+[colors.dim]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#31748f"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ebbcba"
+white = "#e0def4"
 
 [cursor.style]
 shape = "Beam"
@@ -46,11 +80,12 @@ shape = "Beam"
 shape = "Beam"
 
 [font]
-size = 15.0
+size = 24.0
 
 [font.normal]
 #family = "0xProto Nerd Font"
-family = "Inconsolata Nerd Font"
+#family = "Inconsolata Nerd Font"
+family = "Iosevka Nerd Font"
 style = "Regular"
 
 [scrolling]

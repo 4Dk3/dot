@@ -1,6 +1,6 @@
 {
  	"gtk-layer-shell": false,
-	"position": "top",
+	"position": "bottom",
 	"modules-left": ["custom/launcher","cpu","memory","tray"],
 	"modules-center": ["sway/workspaces"],
 	"modules-right": ["battery", "pulseaudio", "backlight", "network", "clock","custom/power"],

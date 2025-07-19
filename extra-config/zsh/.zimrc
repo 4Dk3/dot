@@ -5,18 +5,15 @@
 #
 
 #
-# Modules
+# Theme
 #
 
-#Powerlevel10k
-#zmodule romkatv/powerlevel10k --use degit
-
-# Minimal theme
-zmodule sorin
-#zprompt_theme minimal2
+zmodule minimal
 
 
-
+#
+# Modules
+#
 
 # Sets sane Zsh built-in environment options.
 zmodule environment

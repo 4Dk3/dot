@@ -1,12 +1,12 @@
 ### Variables
-# Logo key. Use Mod1 for Alt.
+# Logo key. Use Mod4 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
+set $term alacritty
 set $menu wofi --show drun -I
 set $srcs grim -g "$(slurp)" - | wl-copy
 set $web firefox
@@ -17,12 +17,12 @@ set $disc flatpak run xyz.armcord.ArmCord
 set $py pycharm
 
 output * {
-   bg $HOME/wallpapers/brown-kbd1.png fill
-   #bg #1a1a19 solid_color
+   bg $HOME/Wallpapers/solarized-dragon.png fill
+   #bg #ffffff solid_color
 }
 
-output HDMI-A-1 pos 1366 0 res 1920x1080
-output eDP-1 pos 0 0 res 1366x768
+output HDMI-A-1 pos 0 0 res 1920x1080
+output eDP-1 pos 1920 0 res 1366x768
 
 focus output HDMI-A-1
 
@@ -31,14 +31,14 @@ focus output HDMI-A-1
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Jasper-Grey-Dark-Compact'
-    gsettings set $gnome-schema icon-theme 'Colloid-Grey-Dark'
-    gsettings set $gnome-schema font-name '0xProto Nerd Font'
+    #gsettings set $gnome-schema gtk-theme 'Jasper-Grey-Dark-Compact'
+    #gsettings set $gnome-schema icon-theme 'Colloid-Grey-Dark'
+    gsettings set $gnome-schema font-name 'Inter'
 }
 
 
 
-font Inconsolata Nerd Font bold 10
+font Iosevka Nerd Font bold 11
 
 ### Input configuration
 
@@ -133,6 +133,11 @@ font Inconsolata Nerd Font bold 10
     bindsym $mod+f1 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle 
     bindsym $mod+f4 exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle 
 
+    # New volume control that works with the new corne keyboard
+    bindcode 172 exec playerctl play-pause
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 
     # Brightness control
     bindsym $mod+f11 exec light -U 5
@@ -246,7 +251,7 @@ bindsym $mod+r mode "resize"
 bar {
     swaybar_command waybar
     workspace_buttons yes
-    position top
+    position bottom
     height 20
 }
 
@@ -279,12 +284,12 @@ for_window [class="qt5ct" instance="qt5ct"] floating enable
 for_window [app_id="Popsicle"] floating enable
 #for_window [class="discord" instance="discord"] floating enable
 
-#### Sway Window Colors ####
-set $unfocused  #1a1a19
+#### Sway Window solors ####
+set $unfocused  #191724
 set $urgent     #9d0006
-set $normal     #5f3343
-set $inactive   #1a1a19
-set $text	      #1a1a19
+set $normal     #524f67
+set $inactive   #191724
+set $text	      #e0def4
 
 # colors                    border        bg          text         indicator   chld_brdr
 client.focused              $normal     $normal     $text          $normal     $normal

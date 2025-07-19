@@ -1,8 +1,8 @@
 * {
 	border: none;
 	border-radius: 0px;
- 	font-family: "Inconsolata Nerd Font" ;
-	font-size: 14px;
+ 	font-family: "Iosevka Nerd Font" ;
+	font-size: 18px;
 	min-height: 10px;
 }
 
@@ -28,11 +28,11 @@ window#waybar.hidden {
 #workspaces button {
         padding: 0px;
         margin: 4px 0px 4px 0px;
-        background-color: #1a1a19;
-        color: #a89984;
+        background-color: #191724;
+        color: #e0def4;
         min-width: 36px;
         border-radius: 0px;
-        border-top: 3px solid #5f3343;
+        border-top: 3px solid #1f1d2e;
 }
 
 /*#workspaces button.active {
@@ -47,13 +47,13 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-        background-color: #5f3343;
-        color: #a89984;
+        background-color: #191724;
+        color: #e0def4;
         /*border-top: 5px solid #b16286;*/
 }
 
 #workspaces button.urgent {
-        background-color: #fb4934;
+        background-color: #eb6f92;
 }
 /*
 #window,
@@ -85,9 +85,9 @@ window#waybar.hidden {
 	margin: 2px 0px 2px 0px;
 	border-radius: 0px;
 	transition: none;
-	color: #a89984;
-	background: #1a1a19;
- 	border-top: 5px solid #5f3343;
+	color: #e0def4;
+	background: #191724;
+ 	border-top: 5px solid #1f1d2e;
 }
 
 /*
@@ -124,7 +124,7 @@ window#waybar.hidden {
 
 #custom-launcher {
 	font-size: 20px;
-	color: #a89984;
+	color: #eb6f92;
 }
 
 #custom-power {
